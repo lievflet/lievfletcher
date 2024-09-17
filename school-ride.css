@@ -1,0 +1,532 @@
+ @font-face {
+    font-family: "DM-Sans";
+    src: url(assets/fonts/DM-Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf);
+    src: url(assets/fonts/DM-Sans/DMSans-VariableFont_opsz\,wght.ttf);
+    src: url(assets/fonts/opificio/opificio_regular.ttf);
+ }
+
+/* Ensure consistent overflow handling */
+body {
+    overflow-x: hidden;
+}
+
+/* Apply box-sizing globally */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.topnav {
+    background-color: rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+    border-bottom: 0px solid #ddd;
+    position: relative;
+    z-index: 2;
+}
+
+.topnav::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #fcfcfc 0%, #FF85D6 100%);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+.topnav .logo {
+    float: left;
+    font-size: 25px;
+    font-family: "Typo Hoop Light Demo";
+    font-weight: 300;
+    color: #000;
+    padding: 14px 32px;
+    text-decoration: none;
+}
+
+/* New CSS for the dots */
+.dots {
+    float: left;
+    padding: 25px 0px;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.dot {
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-color: #79E7FF;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.dot1 {
+    opacity: 1;
+}
+
+.dot2 {
+    opacity: 0.7;
+}
+
+.dot3 {
+    opacity: .4;
+}
+
+.topnav .logo:hover {
+    color: #00cbc4;
+}
+
+.topnav .topnav-right a {
+    float: left;
+    color: #000;
+    font-family: "Typo Hoop Light Demo";
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    position: relative;
+    z-index: 1;
+}
+
+.topnav .topnav-right a:hover {
+    color: #00cbc4;
+}
+
+.topnav .topnav-right a::after {
+    content: '';
+    display: block;
+    width: 100;
+    height: 2px;
+    transition: width .3s;
+}
+
+.topnav .topnav-right a:hover::after {
+    width: 100%;
+}
+
+.topnav .topnav-right {
+    float: right;
+}
+
+.topnav .icon {
+    display: none;
+    z-index: 2;
+}
+
+/* Media Queries for the navbar */
+@media screen and (max-width: 768px) {
+    .topnav .topnav-right a {
+        display: none;
+    }
+    .topnav .topnav-right a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .topnav-right .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive .topnav-right {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 40px;
+    }
+    .topnav.responsive .topnav-right a {
+        float: none;
+        display: block;
+        text-align: right;
+        padding: 14px 16px;
+        z-index: 1;
+    }
+}
+
+/* Page-specific styles with consistent overflow handling */
+body.school-ride {
+    font-family: "Opificio";
+    margin: 0;
+    padding: 0;
+    background: #FCFCFC;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #333;
+    overflow-x: hidden; /* Consistent overflow handling */
+}
+
+
+@media only screen and (max-width: 768px) {
+    #introduction {
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 40%;
+    }
+    .section-text {
+        font-size: 3%;
+    }
+    .desktop-image {
+        display: none;
+    }
+    .mobile-image {
+        display: initial;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .desktop-image {
+        display: intial;
+    }
+    .mobile-image {
+        display: none;
+    }
+}
+
+
+/* Footer style */
+
+footer {
+    background-color: #E5E5E5;
+    color: #000;
+    font-family: Opificio;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.25px;
+}
+
+aside {
+    float: right;
+}
+
+
+/* Hero Image Style */
+
+.container {
+    background: linear-gradient(114deg, #FFC76A 34.51%, #FF9E00 104.87%);
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    height: 658px;
+    width: 100%;
+    margin: 0;
+    display: grid;
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    outline: solid 1px red;
+    width: 100vw;
+    padding-left: 10%;
+    row-gap: 20%;
+}
+
+.hero-image {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    outline: solid 1px red;
+}
+
+.desktop-image {
+    width: 100%;
+}
+
+.mobile-image {
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+}
+
+
+
+
+#school-ride {
+    color: #000;
+    text-align: center;
+    font-family: Opificio;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.25px;
+    outline: solid 1px red;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#a-carpool {
+    color: #000;
+    font-family: Opificio;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.25px;
+    outline: solid 1px red;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.role {
+    font-size: 24px;
+    color: #fff;
+    outline: solid 1px red;
+}
+
+.scope {
+    font-size: 24px;
+    color: #fff;
+    outline: solid 1px red;
+}
+
+/* Case Study Style */
+
+#introduction {
+    border-radius: 0px 8px 8px 0px;
+    background: #00C8FF;
+    display: inline-flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+    align-items: center;
+    width: 30%
+}
+
+.section-text {
+    color: #000;
+    font-family: "Typo Hoop Demo";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10%;
+}
+
+.section-padding {
+    padding-top: 5%;
+}
+
+.divider {
+    background-color: #000;
+    display: block;
+    height: 2px;
+    width: 70%;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.text-padding {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+p {
+    color: #000;
+    font-family: "DM-Sans";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+li {
+    list-style-type: square;
+    color: #000;
+    font-family: "DM-Sans";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 25px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+h1 {
+    padding-left: 4%;
+    font-family: "DM-Sans";
+}
+
+h2 {
+    font-size: 26px;
+    padding-left: 4%;
+    font-family: "DM-Sans";
+}
+
+th {
+    width: 50%;
+}
+
+#research {
+    border-radius: 0px 8px 8px 0px;
+    background: #FAAB11;
+    display: inline-flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+    align-items: center;
+    width: 30%
+}
+
+figcaption {
+    color: #7A7A7A;
+    font-family: "DM-Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#design {
+    border-radius: 0px 8px 8px 0px;
+    background: #98DE56;
+    display: inline-flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+    align-items: center;
+    width: 30%
+}
+
+.paperframe {
+    width: 100%;
+}
+
+th, td {
+    padding: 20px;
+}
+
+.iteration {
+    vertical-align: top;
+    text-align: top;
+}
+
+.lofi {
+    width: 100%;
+}
+
+.table_padding {
+    width: 100%;
+}
+
+#personas {
+    width: 100%;
+}
+
+.homepage {
+    outline: 1px #DDDDDD solid;
+    width: 100%;
+}
+
+.lofi {
+    outline: 1px #DDDDDD solid;
+}
+td {
+    padding-bottom: 50px;
+}
+
+.card_colors {
+    width: 100%;
+}
+
+.final-prototype {
+    width: 100%;
+}
+
+#view_prototype {
+    color: var(--Summer-Aque, #00C9B2);
+    font-family: "DM-Sans";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#final_reflection {
+    border-radius: 0px 8px 8px 0px;
+    background: #FF85D6;
+    display: inline-flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+    align-items: center;
+    width: 30%
+}
+
+#thank_you {
+    color: var(--Fruit-orange, #FAAB11);
+    font-family: "Typo Hoop Light Demo";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.footer-container {
+    padding-left: 20px;
+    margin-bottom: -26px;
+    background-color: #F0F0F0;
+    display: inline-block;
+    width: 100%;
+    height: 90px;
+    margin-top: 100px;
+}
+
+.copyright {
+    width: 30%;
+    display: inline-block;
+}
+
+.contact {
+    width: 12%;
+    float: right;
+    display: inline-block;
+}
+
+.links {
+    width: 30%;
+    float: right;
+    display: inline-block;
+}
+
+.footer-text {
+    color: #000;
+    font-family: Opificio;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.25px;
+}
+
+/*Responsive Images */
+
+
+
+
