@@ -8,57 +8,63 @@
     <script src="script.js"></script>
   </head>
 <body class="portfolio-page">
+
     <!-- Inline Navbar HTML -->
-    <header>
-        <div class="topnav" id="myTopnav">
-            <a href="index.html" class="logo">Liev Fletcher</a>
-            <span class="dots">
-                <span class="dot dot1"></span>
-                <span class="dot dot2"></span>
-                <span class="dot dot3"></span>
-            </span>
-            <div class="topnav-right">
-                <a href="about.html">about</a>
-                <a href="portfolio.html">portfolio</a>
-                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html" class="logo">Liev Fletcher</a>
+        <span class="dots">
+            <span class="dot dot1"></span>
+            <span class="dot dot2"></span>
+            <span class="dot dot3"></span>
+        </span>
+        <div class="topnav-right">
+            <a href="about.html">about</a>
+            <a href="portfolio.html">portfolio</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+        </div>
+    </nav>
+<!-- Inline Navbar HTML -->
+
+    <main class="content-wrap">
+        <span>
+            <h2 class="portfolio-highlight highlight"> portfolio </h2>
+        </span>
+        <div>
+            <section class="portfolio-intro">
+                Take a look at what I&rsquo;ve been working on. Below are case studies and prototypes 
+                of all my projects.
+            </section>
+        </div>
+        <div class="portfolio-container">
+                <img src="assets/images/portfolio-sr-mobile.png" id="mobile-thumbnail" alt="School Ride Thumbnail"> 
+            <h2 class="title">
+                School Ride
+            </h2>
+            <p class="description">
+                A carpool app for parents. Users can create and/or join local carpools that will transport 
+                their kids to school.
+            </p>
+            <p class="features">Features</p>
+            <ul class="list">
+                <li>
+                    In-app messaging
+                </li>
+                <li>
+                    Safety Measures
+                </li>
+                <li>
+                    Customization
+                </li>
+            </ul>
+            <div class="button-container">
+                <button id="prototypeButton" type="button">Prototype &#8599;</button>
+                <button id="caseStudyButton" type="button">Case Study</button>
             </div>
         </div>
-    </header>
-    <span>
-        <h2 class="portfolio-highlight highlight"> portfolio </h2>
-    </span>
-    <div>
-        <section class="portfolio-intro intro">
-            Take a look at what I&rsquo;ve been working on. Below are case studies and prototypes 
-            of all my projects.
-        </section>
-    </div>
-    <div class="portfolio-container">
-        <h2 class="title">
-            School Ride
-        </h2>
-        <p class="description">
-            A carpool app for parents. Users can create and/or join local carpools that will transport 
-            their kids to school.
-            <br><br>
-            Features:
-        </p>
-        <ul class="list">
-            <li>
-                In-app messaging
-            </li>
-            <li>
-                Safety Measures
-            </li>
-            <li>
-                Customization
-            </li>
-        </ul>
-        <div class="button-container">
-            <button id="prototypeButton" type="button">Prototype &#8599;</button>
-            <button id="caseStudyButton" type="button">Case Study</button>
-        </div>
-    </div>
+        <hr id="portfolio-divider"></hr>
+        <p class="stay-tuned2">Stay tuned for future projects!</p>
+    </main>
+    <div id="footer">
     <footer class="footer-container">
         <div class="copyright">
             <p class="footer-text">Copyright Liev Fletcher 2024</p>
@@ -71,5 +77,6 @@
             <p class="footer-text"> Contact:</p>
         </div>
     </footer>
+    </div>
 </body>
 </html>

@@ -1,5 +1,13 @@
 /* Default CSS */
 
+@font-face {
+    font-family: "DM-Sans";
+    src: url(assets/fonts/DM-Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf);
+    src: url(assets/fonts/DM-Sans/DMSans-VariableFont_opsz\,wght.ttf);
+    src: url(assets/fonts/opificio/opificio_regular.ttf);
+    src: url(assets/fonts/typo-hoop/Typo_Hoop_Regular_Demo.otf);
+ }
+
 /* Ensure consistent overflow handling */
 body {
     overflow-x: hidden;
@@ -113,17 +121,14 @@ body {
     z-index: 2;
 }
 
-#footer {
-    background: #F0F0F0;
+header {
+    position: fixed;
+    width: 100%;
 }
 
-.footer-container {
-    display: block;
-    float: right;
-}
 
 /* Media Queries for the navbar */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 834px) {
     .topnav .topnav-right a {
         display: none;
     }
@@ -133,7 +138,7 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 834px) {
     .topnav.responsive {
         position: relative;
     }
@@ -192,11 +197,6 @@ body.portfolio-page {
 
 /* Index styling */
 
-.intro-conainter {
-    width: 100%;
-    outline: solid 1px red;
-}
-
 .home-intro {
     height: calc(100vh - 50px); /* Full height minus the height of the navbar */
     padding: 20px;
@@ -212,30 +212,28 @@ body.portfolio-page {
     letter-spacing: 0.25px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
-    width: 100vw;
-    padding-top: 8%;
+.intro-container {
+    display: inline-block;
+    width: 90%;
     padding-left: 8%;
     padding-right: 8%;
-    column-gap: 150px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .intro {
     color: #000;
     font-family: Opificio;
-    font-size: 40px;
+    font-size: 38px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.25px;
-    display: block;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    display: inline-block;
+    float: right;
+    width: 35%;
+    margin-right: 5%;
 }
 
 .interests {
@@ -250,87 +248,59 @@ body.portfolio-page {
     letter-spacing: 0.25px;
 }
 
-#interest1 {
-    grid-column-start: 2;
-    grid-column-end: 3;
+#interest-colm1 {
+    display: inline-block;
+    float: right;
+    width: 30%;
 }
 
-#interest2 {
-    grid-column-start: 3;
-    grid-column-end: 4;
+
+#interest-colm2 {
+    display: inline-block;
+    float: right;
+    width: 30%;
 }
 
-#interest3 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-#interest4 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-#interest5 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-#interest6 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
 
 #big-container {
     p {
-        font-size: 20px;
+        font-size: 24px;
     }
     .go-to {
         color: var(--Sweet-Purple, #8167E7);
     }
     #stay-tuned {
-        font-size: 18px;
+        font-size: 24px;
         color: #858585;
     }
-    width: 911px;
-    height: 458px;
+    width: 70%;
+    height: 100%;
     padding-top: 10px;
     padding-left: 50px;
+    padding-right: 50px;
     background-image: url(assets/images/bigcontainer.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     float: left;
+    display: inline-block;
 }
 
 .container-title {
     color: #858585;
     font-family: "Typo Hoop Demo";
-    font-size: 24px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.25px;
-}
-
-img {
-    width: 100%;
-    z-index: -1;
-    opacity: 100%;
-    vertical-align: float;
+    text-decoration: underline;
 }
 
 .divider {
     background-color: #000;
     display: block;
     height: 2px;
-    width: 95%;
+    width: 50%;
     border: 0;
     border-top: 1px solid #ccc;
     margin-left: -1px;
@@ -349,16 +319,27 @@ img {
         line-height: normal;
         letter-spacing: 0.25px;
     }
-    width: 437px;
-    height: 320px;
+    width: 30%;
+    height: 76%;
     padding-top: 10px;
     padding-left: 50px;
+    padding-right: 50px;
     background-image: url(assets/images/smallcontainer.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    float: left;
+    background-size: 100% 100%;
+    display: inline-block;
+    float: right;
+    
 }
 
+#container-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
 
 
 
@@ -367,7 +348,7 @@ img {
   
 .portfolio-intro {
     font-family: "Opificio";
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 400;
     padding-right: 15%;
     padding-left: 15%;
@@ -378,7 +359,7 @@ img {
 .portfolio-highlight {
     font-family: "Typo Hoop Demo";
     color: #8167E7;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 400;
     text-align: center;
     padding-top: 5%;
@@ -388,14 +369,19 @@ img {
     border-radius: 10px;
     border: 1px solid #E7E7E7;
     background: rgba(185, 185, 185, 0.10);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
     backdrop-filter: blur(10px);
     padding: 2%;
     background-image: url(assets/images/portfolio-sr.png);
     background-repeat: no-repeat;
     background-position: right;
-    width: 66%;
-    height: 426px;
-    
+    background-size: cover;
+    width: 70%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
 }
 
 #prototypeButton {
@@ -442,6 +428,16 @@ img {
     width: 45%;
 }
 
+.features {
+    color: #000;
+    font-family: Opificio;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 45%;
+}
+
 .list {
     color: #000;
     font-family: Opificio;
@@ -452,18 +448,131 @@ img {
     width: 45%;
 }
 
-.button-container {
-    
+#portfolio-divider {
+    width: 70%;
+    margin-top: 3%;
+    fill: #C1C1C1;
+    border: 1px solid #C1C1C1;
+    border-radius: 5px;
 }
 
 
+.stay-tuned2 {
+    color: #9A9A9A;
+    font-family: "Typo Hoop Light Demo";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+#mobile-thumbnail {
+    display: none;
+}
+
+
+@media only screen and (max-width: 834px) {
+    .description {
+        font-size: 20px;
+        margin: 5;
+    }
+
+    .list, .features {
+        display: none;
+    }
+
+    .title {
+        font-size: 26px;
+        margin: 0;
+    }
+    
+    #prototypeButton {
+        width: 160px;
+        height: 37px;
+        font-size: 16px;
+    }
+
+    #caseStudyButton {
+        width: 160px;
+        height: 37px;
+        font-size: 16px;
+    }
+
+    .stay-tuned2 {
+        font-size: 18px;
+    }
+
+    .portfolio-container {
+        background-image: url(assets/images/portfolio-sr-tablet.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+        width: 85%;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+
+    .portfolio-highlight, .portfolio-intro {
+        font-size: 24px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .portfolio-container {
+        background-image: none;
+        padding: 0;
+    }
+    #mobile-thumbnail {
+        width: 100%;
+        margin: 0;
+        display: block;
+        vertical-align: top;
+    }
+    .title {
+        font-size: 22px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .description {
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: 20px;
+        width: 90%;
+    }
+    #prototypeButton {
+        width: 140px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    #caseStudyButton {
+        width: 140px;
+        height: 38px;
+        font-size: 14px;
+    }
+    .button-container {
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .portfolio-highlight, .portfolio-intro {
+        font-size: 22px;
+    }
+}
 
 /* About Page */
 
 
 .about-me-intro {
     font-family: Opificio;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 400;
     padding-right: 20%;
     padding-left: 20%;
@@ -473,28 +582,42 @@ img {
 .about-me-highlight {
     font-family: "Typo Hoop Demo";
     color: #00C9B2;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 400;
     text-align: right;
     padding-right: 20%;
     padding-top: 15%;
 }
 
-aside {
-    display: block;
-    float: right;
+
+@media only screen and (max-width: 834px) {
+    .about-me-highlight {
+        font-size: 26px;
+    }
+    .about-me-highlight {
+        font-size: 26px;
+    }
 }
 
 
-/* Additional responsive design */
-@media only screen and (max-width: 768px) {
-    .highlight,
-    .intro,
-    .interests span {
-        font-size: 25px;
+@media only screen and (max-width: 500px) {
+    .about-me-highlight {
+        font-size: 24px;
         padding-right: 25%;
-        padding-left: 25%;
+        padding-left: auto;
     }
+    .about-me-intro {
+        font-size: 24px;
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
+
+}
+
+/* Additional responsive design */
+@media only screen and (max-width: 834px) {
+
     body.portfolio-page {
         background-image: url(assets/images/portfolio-tablet.svg);
     }
@@ -506,12 +629,16 @@ aside {
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .highlight,
-    .intro {
-        font-size: 20px;
-        padding-right: 25%;
-        padding-left: 25%;
+@media only screen and (max-width: 500px) {
+
+    body.portfolio-page {
+        background-image: url(assets/images/portfolio-mobile.svg);
+    }
+    body.about-page {
+        background-image: url(assets/images/about-me-mobile.svg);
+    }
+    body.index-page {
+        background-image: url(assets/images/index-mobile.svg);
     }
 }
 
@@ -526,10 +653,6 @@ aside {
     width: 100%;
     height: 90px;
     margin-top: 100px;
-    margin-bottom: 0px;
-    position:fixed;
-    bottom:0;
-    left:0;
 }
 
 .copyright {
@@ -557,4 +680,32 @@ aside {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.25px;
+}
+
+@media only screen and (max-width: 834px) {
+    .footer-container {
+        height: 80px;
+    }
+    
+    .footer-text {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .footer-container {
+        height: 70px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+
+    .copyright {
+        width: 40%;
+    }
+    .contact {
+        width: 15%;
+    }
 }

@@ -119,7 +119,7 @@ body {
 }
 
 /* Media Queries for the navbar */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 834px) {
     .topnav .topnav-right a {
         display: none;
     }
@@ -129,7 +129,7 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 834px) {
     .topnav.responsive {
         position: relative;
     }
@@ -160,104 +160,104 @@ body.school-ride {
     margin: 0;
     padding: 0;
     background: #FCFCFC;
-    background-attachment: fixed;
-    background-size: cover;
     color: #333;
     overflow-x: hidden; /* Consistent overflow handling */
 }
 
 
-@media only screen and (max-width: 768px) {
-    #introduction {
-        padding-left: 10%;
-        padding-right: 10%;
-        width: 40%;
-    }
-    .section-text {
-        font-size: 3%;
-    }
-    .desktop-image {
-        display: none;
-    }
-    .mobile-image {
-        display: initial;
-    }
-}
-
-
-@media only screen and (min-width: 768px) {
-    .desktop-image {
-        display: intial;
-    }
-    .mobile-image {
-        display: none;
-    }
-}
 
 
 /* Footer style */
 
-footer {
-    background-color: #E5E5E5;
+
+.footer-container {
+    padding-left: 20px;
+    margin-bottom: -26px;
+    background-color: #F0F0F0;
+    display: inline-block;
+    width: 100%;
+    height: 90px;
+    margin-top: 100px;
+}
+
+.copyright {
+    width: 30%;
+    display: inline-block;
+}
+
+.contact {
+    width: 12%;
+    float: right;
+    display: inline-block;
+}
+
+.links {
+    width: 30%;
+    float: right;
+    display: inline-block;
+}
+
+.footer-text {
     color: #000;
     font-family: Opificio;
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.25px;
 }
 
-aside {
-    float: right;
+@media only screen and (max-width: 834px) {
+    .footer-container {
+        height: 80px;
+    }
+    
+    .footer-text {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .footer-container {
+        height: 70px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+
+    .copyright {
+        width: 40%;
+    }
+    .contact {
+        width: 15%;
+    }
 }
 
 
 /* Hero Image Style */
 
 .container {
-    background: linear-gradient(114deg, #FFC76A 34.51%, #FF9E00 104.87%);
+    background-image: url(assets/images/hero-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     display: grid;
     align-items: center; 
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
-    height: 658px;
+    height: 600px;
     width: 100%;
     margin: 0;
-    display: grid;
+    z-index: 0;
+    margin-top: -70px;
 }
 
-.grid-container {
-    display: grid;
-    width: 100%;
-    outline: solid 1px red;
-    width: 100vw;
-    padding-left: 10%;
-    row-gap: 20%;
+.hero-text {
+    width: 150%;
+    margin: 120px;
 }
-
-.hero-image {
-    grid-row-start: 1;
-    grid-row-end: 5;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    outline: solid 1px red;
-}
-
-.desktop-image {
-    width: 100%;
-}
-
-.mobile-image {
-    width: 100%;
-}
-
-.image {
-    width: 100%;
-}
-
-
-
 
 #school-ride {
     color: #000;
@@ -268,7 +268,6 @@ aside {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.25px;
-    outline: solid 1px red;
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -281,24 +280,68 @@ aside {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.25px;
-    outline: solid 1px red;
     grid-column-start: 1;
     grid-column-end: 3;
+    text-align: center;
 }
 
 .role {
     font-size: 24px;
     color: #fff;
-    outline: solid 1px red;
+    float: left;
+    margin-left: 10%;
+    margin-top: 80px;
 }
 
 .scope {
     font-size: 24px;
     color: #fff;
-    outline: solid 1px red;
+    float: right;
+    margin-right: 10%;
+    margin-top: 80px;
+}
+
+#prototype-button {
+    p {
+        color: #000;
+        font-family: "Typo Hoop Light Demo";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 0.25px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    width: 275px;
+    height: 57px;
+    border-radius: 20px;
+    background: var(--Y2K-Green, #A6E767);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    float: right;
+    align-items: center;
+    text-align: center;
+    margin-top: -6%;
+    margin-right: 2%;
 }
 
 /* Case Study Style */
+
+.desktop-image {
+    width: 100%;
+}
+
+.image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border: 1px solid #E5E5E5;
+}
+
+.image-noOutline {
+    width: 100%;
+}
 
 #introduction {
     border-radius: 0px 8px 8px 0px;
@@ -344,21 +387,23 @@ aside {
 p {
     color: #000;
     font-family: "DM-Sans";
-    font-size: 26px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    line-height: 1.2;
 }
 
 li {
     list-style-type: square;
     color: #000;
     font-family: "DM-Sans";
-    font-size: 26px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     padding-left: 25px;
+    line-height: 1.2;
 }
 
 ul {
@@ -367,6 +412,7 @@ ul {
 
 h1 {
     padding-left: 4%;
+    margin-bottom: 20px;
     font-family: "DM-Sans";
 }
 
@@ -394,12 +440,12 @@ th {
 figcaption {
     color: #7A7A7A;
     font-family: "DM-Sans";
-    font-size: 22px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-left: 20px;
     padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 #design {
@@ -426,26 +472,77 @@ th, td {
     text-align: top;
 }
 
-.lofi {
-    width: 100%;
+.first {
+    float: left;
+    width: 33%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
-.table_padding {
-    width: 100%;
+.second {
+    float: left;
+    width: 33%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.third {
+    float: left;
+    width: 33%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.first-image {
+    float: left;
+    width: 33%;
+    padding: 1%;
+}
+
+.second-image {
+    float: left;
+    width: 33%;
+    padding: 1%;
+}
+
+.third-image {
+    float: left;
+    width: 33%;
+    padding: 1%;
+}
+
+.first-lofi {
+    width: 45%;
+    float: left;
+    margin-right: 5%;
+}
+
+.second-lofi {
+    width: 45%;
+    float: left;
+}
+
+.intro-first {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.intro-second {
+    float: left;
+    width: 45%;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 #personas {
     width: 100%;
 }
 
-.homepage {
-    outline: 1px #DDDDDD solid;
-    width: 100%;
-}
-
-.lofi {
-    outline: 1px #DDDDDD solid;
-}
 td {
     padding-bottom: 50px;
 }
@@ -467,7 +564,7 @@ td {
     line-height: normal;
 }
 
-#final_reflection {
+#final-reflection {
     border-radius: 0px 8px 8px 0px;
     background: #FF85D6;
     display: inline-flex;
@@ -488,45 +585,236 @@ td {
     text-align: center;
 }
 
-.footer-container {
-    padding-left: 20px;
-    margin-bottom: -26px;
-    background-color: #F0F0F0;
-    display: inline-block;
-    width: 100%;
-    height: 90px;
-    margin-top: 100px;
+
+/*Responsive Styles */
+
+
+
+@media only screen and (min-width: 834px)  {
+    .mobile-image {
+        display: none;
+    }
 }
 
-.copyright {
-    width: 30%;
-    display: inline-block;
+
+@media only screen and (max-width: 834px)  {
+    .container {
+        background-image: url(assets/images/hero-image-tablet.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom,;
+        height: 420px;
+    }
+    #prototype-button {
+        p {
+            font-size: 18px;
+            margin-top: 6%;
+            margin-bottom: auto;
+        }
+        width: 223px;
+        height: 43px;
+        margin-top: -9%;
+        margin-right: 4%;
+    }
+
+    #school-ride {
+        font-size: 45px;
+    }
+    
+    #a-carpool {
+        font-size: 24px;
+    }
+    
+    .scope, .role {
+        font-size: 16px;
+        float: right;
+        margin-right: 5%;
+        margin-top: 40px;
+    }
+    
+    .hero-text {
+        width: 100%;
+        vertical-align: center;
+        margin-left: 70px;
+    }
+    
+    #introduction, #research, #design, #final-reflection {
+        margin-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin-bottom: 5%;
+    }
+
+    .section-text {
+        font-size: 24px;
+        margin: 6%;
+    }
+
+    p {
+        font-size: 22px;
+    }
+    
+    li {
+        font-size: 22px;
+        padding-left: 0px;
+    }
+    
+    h1 {
+        font-size: 26px;
+        padding-left: 4%;
+    }
+    
+    h2 {
+        font-size: 24px;
+        padding-left: 4%;
+        font-weight: 700;
+    }
+
+    figcaption {
+        font-size: 18px;
+    }
+
+
+    #thank_you {
+        font-size: 24px;
+    }
+
+    .text-padding {
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .divider {
+        width: 80%;
+    }
+    
+    #view_prototype {
+        font-size: 24px;
+    }
+
 }
 
-.contact {
-    width: 12%;
-    float: right;
-    display: inline-block;
+@media only screen and (max-width: 500px) {
+    .container {
+        background-image: none;
+        background: linear-gradient(114deg, #FFC76A 34.51%, #FF9E00 104.87%);
+    }
+
+    #prototype-button {
+        p {
+            font-size: 18px;
+            padding-top: 6%;
+        }
+        width: 223px;
+        height: 50px;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -9%;
+        margin-bottom: 12%;
+    }
+    
+
+    #school-ride {
+        font-size: 45px;
+    }
+    
+    #a-carpool {
+        font-size: 24px;
+    }
+    
+    .scope, .role {
+        font-size: 16px;
+        float: right;
+        margin-right: 5%;
+        margin-top: 40px;
+    }
+    
+    .hero-text {
+        width: 100%;
+        vertical-align: center;
+        margin-left: 70px;
+    }
+    
+    #introduction, #research, #design, #final-reflection {
+        margin-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin-bottom: 5%;
+    }
+
+    .section-text {
+        font-size: 20px;
+        margin: 6%;
+    }
+
+    p {
+        font-size: 18px;
+    }
+    
+    li {
+        font-size: 18px;
+        padding-left: 0px;
+    }
+    
+    h1 {
+        font-size: 22px;
+        padding-left: 4%;
+    }
+    
+    h2 {
+        font-size: 20px;
+        padding-left: 4%;
+        font-weight: 700;
+    }
+
+    figcaption {
+        font-size: 14px;
+    }
+
+
+    #thank_you {
+        font-size: 20px;
+    }
+
+    .text-padding {
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .divider {
+        width: 80%;
+    }
+    
+    #view_prototype {
+        font-size: 20px;
+    }
+
+    .intro-first {
+        float: none;
+        width: 100%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        text-decoration: underline;
+    }
+    
+    .intro-second {
+        float: none;
+        width: 100%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
 }
-
-.links {
-    width: 30%;
-    float: right;
-    display: inline-block;
-}
-
-.footer-text {
-    color: #000;
-    font-family: Opificio;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.25px;
-}
-
-/*Responsive Images */
-
-
 
 

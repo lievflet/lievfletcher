@@ -8,25 +8,36 @@
     <script src="script.js"></script>
 </head>
 <body class="index-page">
+
     <!-- Inline Navbar HTML -->
-    <header>
-        <div class="topnav" id="myTopnav">
-            <a href="index.html" class="logo">Liev Fletcher</a>
-            <span class="dots">
-                <span class="dot dot1"></span>
-                <span class="dot dot2"></span>
-                <span class="dot dot3"></span>
-            </span>
-            <div class="topnav-right">
-                <a href="about.html">about</a>
-                <a href="portfolio.html">portfolio</a>
-                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
-            </div>
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html" class="logo">Liev Fletcher</a>
+        <span class="dots">
+            <span class="dot dot1"></span>
+            <span class="dot dot2"></span>
+            <span class="dot dot3"></span>
+        </span>
+        <div class="topnav-right">
+            <a href="about.html">about</a>
+            <a href="portfolio.html">portfolio</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
         </div>
-    </header>
+    </nav>
+<!-- Inline Navbar HTML -->
+
     <main>
         <section class="home-intro">
-            <div class="grid-container">
+            <div class="intro-container">
+                <div id="interest-colm2">
+                    <p class="interests">growing my skills</p>
+                    <p class="interests">minimalist designs</p>
+                    <p class="interests">working with team</p>
+                </div>
+                <div id="interest-colm1">
+                    <p class="interests">problem solving</p>
+                    <p class="interests">helping others</p>
+                    <p class="interests">challenging myself</p>
+                </div>
                 <div class="intro">
                     <p>
                     <span class="home-highlight">
@@ -36,30 +47,26 @@
                     I love...
                     </p>
                 </div>
-                <div class="interests" id="interest1">problem solving</div>
-                <div class="interests" id="interest2">learning new things</div>
-                <div class="interests" id="interest3">helping others</div>
-                <div class="interests" id="interest4">minimalist design</div>
-                <div class="interests" id="interest5">challenging myself</div>
-                <div class="interests" id="interest6">working with a team</div>
             </div>
-            <div id="big-container">
-                <h1 class="container-title">Portfolio &#8599</h1>
-                <h1>School Ride</h1>
-                <p>Carpool app for parents of school-aged children.</p>
-                <p class="go-to">go to case study &rarr;</p>
-                <hr class="divider"></hr>
-                <p id="stay-tuned">Stay tuned for future projects!</p>
-            </div>
-            <div id="small-container">
-                <div class="intro">
-                    <h1 class="container-title">Contact</h1>
-                    <h2>Email me:</h2>
-                    <p>lievflet@gmail.com</p>
-                    <h2>Lets Connect:</h2>
-                    <a href="www.linkedin.com/in/liev-fletcher">www.linkedin.com/in/liev-fletcher</a>
+            <span id="container-container">
+                <div id="big-container">
+                    <h1 class="container-title">Portfolio &#8599</h1>
+                    <h1>School Ride</h1>
+                    <p>Carpool app for parents of school-aged children.</p>
+                    <p class="go-to">go to case study &rarr;</p>
+                    <hr class="divider"></hr>
+                    <p id="stay-tuned">Stay tuned for future projects!</p>
                 </div>
-            </div>
+                <div id="small-container">
+                    <div>
+                        <h1 class="container-title">Contact</h1>
+                        <h2>Email me:</h2>
+                        <p>lievflet@gmail.com</p>
+                        <h2>Lets Connect:</h2>
+                        <a href="www.linkedin.com/in/liev-fletcher">www.linkedin.com/in/liev-fletcher</a>
+                    </div>
+                </div>
+            </span>
         </section>
     </main>
     <footer class="footer-container">
@@ -74,6 +81,5 @@
             <p class="footer-text"> Contact:</p>
         </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
