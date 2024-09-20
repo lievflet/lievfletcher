@@ -261,6 +261,9 @@ body.portfolio-page {
     width: 30%;
 }
 
+#container-container { 
+    margin-bottom: 50px;
+}
 
 #big-container {
     p {
@@ -268,6 +271,7 @@ body.portfolio-page {
     }
     .go-to {
         color: var(--Sweet-Purple, #8167E7);
+        text-decoration: underline;
     }
     #stay-tuned {
         font-size: 24px;
@@ -307,6 +311,9 @@ body.portfolio-page {
 }
 
 #small-container {
+    a {
+        color: var(--Sweet-Purple, #8167E7);
+    }
     p, a {
         font-size: 20px;
     }
@@ -320,7 +327,7 @@ body.portfolio-page {
         letter-spacing: 0.25px;
     }
     width: 30%;
-    height: 76%;
+    height: 76%; 
     padding-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
@@ -329,7 +336,6 @@ body.portfolio-page {
     background-size: 100% 100%;
     display: inline-block;
     float: right;
-    
 }
 
 #container-container {
@@ -341,6 +347,163 @@ body.portfolio-page {
     margin-bottom: 0;
 }
 
+@media only screen and (max-width: 834px) {
+    .intro-container {
+        display: none;
+    }
+
+    .intro-mobile {
+        color: #000;
+        font-family: Opificio;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.25px;
+        display: inline-block;
+        width: 100%;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 15%;
+    }
+    #interest-colm1-mobile {
+        display: inline-block;
+        float: right;
+        width: 50%;
+        margin-bottom: 5%;
+    }
+    
+    #interest-colm2-mobile {
+        display: inline-block;
+        float: right;
+        width: 50%;
+        margin-bottom: 5%;
+    }
+
+    .interests {
+        font-size: 28px;
+    }
+
+    #small-container {
+        p, a {
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        h1 {
+            font-size: 26px;
+        }
+        width: 40%;
+        height: 60%; 
+        padding-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-image: url(assets/images/smallcontainer-tablet.png);
+    }
+
+    #big-container {
+        p {
+            font-size: 20px;
+        }
+        #stay-tuned {
+            font-size: 20px;
+        }
+        h1 {
+            font-size: 26px;
+        }
+        width: 60%;
+        height: 80%;
+        padding-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-image: url(assets/images/bigcontainer-tablet.png);
+    }
+    #container-container {
+        margin-top: 0;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .intro-mobile {
+        font-size: 26px;
+        display: inline-block;
+        width: 100%;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 15%;
+    }
+    #interest-colm1-mobile {
+        display: inline-block;
+        float: right;
+        width: 50%;
+        margin-bottom: 5%;
+    }
+    
+    #interest-colm2-mobile {
+        display: inline-block;
+        float: right;
+        width: 50%;
+        margin-bottom: 5%;
+    }
+
+    .interests {
+        font-size: 22px;
+        padding-top: 15%;
+    }
+
+    #small-container {
+        display: none;
+    }
+
+    #big-container {
+        display: none;
+    }
+    #container-container {
+        display: none;
+    }
+    #mobile-container {
+        background: rgba(252, 252, 252, 0.50);
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        padding-top: 0;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 15%;
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: 0;
+        position:absolute;
+        left:0;
+        right:0;
+    }
+    .container-title {
+        color: #858585;
+        font-family: "Typo Hoop Demo";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.25px;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .divider {
+        background-color: #000;
+        display: block;
+        height: 2px;
+        width: 50%;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin-left: -1px;
+    }
+    .go-to {
+        color: var(--Sweet-Purple, #8167E7);
+        text-decoration: underline;
+    }
+}
 
 
 /* Portfolio */
@@ -652,7 +815,6 @@ body.portfolio-page {
     display: inline-block;
     width: 100%;
     height: 90px;
-    margin-top: 100px;
 }
 
 .copyright {
@@ -707,5 +869,16 @@ body.portfolio-page {
     }
     .contact {
         width: 15%;
+    }
+}
+
+
+
+@media only screen and (min-width: 834px) {
+    .intro-container-mobile {
+        display: none;
+    }
+    #mobile-container {
+        display: none;
     }
 }
