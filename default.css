@@ -465,6 +465,22 @@ body.portfolio-page {
         display: none;
     }
     #mobile-container {
+        .go-to-mobile, a {
+            color: var(--Sweet-Purple, #8167E7);
+            text-decoration: underline;
+        }
+        h1 { 
+            font-size: 20px;
+        }
+        h2 {
+            color: var(--Summer-Aque, #00C9B2);
+            font-family: Opificio;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.25px;
+        }
         background: rgba(252, 252, 252, 0.50);
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
         padding-top: 0;
@@ -757,8 +773,10 @@ body.portfolio-page {
     .about-me-highlight {
         font-size: 26px;
     }
-    .about-me-highlight {
+    .about-me-intro {
         font-size: 26px;
+        padding-right: 12%;
+        padding-left: 12%;
     }
 }
 
