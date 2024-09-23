@@ -30,4 +30,5 @@ document.addEventListener("DOMContentLoaded", function () {
   const caseStudyButton = document.getElementById("caseStudyButton");
   if (caseStudyButton) {
     caseStudyButton.addEventListener("click", handleCaseStudyButtonClick);
- 
+  }
+});

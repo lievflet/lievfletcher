@@ -605,6 +605,7 @@ body.portfolio-page {
     flex-shrink: 0;
     font-family: "Opificio";
     font-size: 20px;
+    margin-left: 50px;
 }
 
 #caseStudyButton {
@@ -616,7 +617,6 @@ body.portfolio-page {
     flex-shrink: 0;
     font-family: "Opificio";
     font-size: 20px;
-    margin-left: 50px;
 }
 
 /* Hover effect */
@@ -724,13 +724,13 @@ body.portfolio-page {
         width: 160px;
         height: 37px;
         font-size: 16px;
+        margin-left: 25px;
     }
 
     #caseStudyButton {
         width: 160px;
         height: 37px;
         font-size: 16px;
-        margin-left: 25px;
     }
 
     .stay-tuned2 {
