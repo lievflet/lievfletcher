@@ -1,10 +1,24 @@
- @font-face {
+/* Font Definitions */
+@font-face {
     font-family: "DM-Sans";
-    src: url(assets/fonts/DM-Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf);
-    src: url(assets/fonts/DM-Sans/DMSans-VariableFont_opsz\,wght.ttf);
-    src: url(assets/fonts/opificio/opificio_regular.ttf);
- }
-
+    src: url(assets/fonts/DM-Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf) format('truetype');
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "DM-Sans";
+    src: url(assets/fonts/DM-Sans/DMSans-VariableFont_opsz\,wght.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Opificio";
+    src: url(assets/fonts/opificio/opificio_regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Typo Hoop";
+    src: url(assets/fonts/typo-hoop/Typo_Hoop_Regular_Demo.otf) format('opentype');
+}
 /* Ensure consistent overflow handling */
 body {
     overflow-x: hidden;
@@ -22,8 +36,11 @@ body {
     background-color: rgba(255, 255, 255, 0.6);
     overflow: hidden;
     border-bottom: 0px solid #ddd;
-    position: relative;
-    z-index: 2;
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Stick it to the top */
+    left: 0; /* Align with the left edge */
+    width: 100%; /* Full width of the page */
+    z-index: 2; /* Ensure it's on top of other content */
 }
 
 .topnav::after {
@@ -218,7 +235,7 @@ body.school-ride {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
     .footer-container {
         height: 70px;
     }
@@ -699,7 +716,7 @@ td {
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
     .container {
         background-image: none;
         background: linear-gradient(114deg, #FFC76A 34.51%, #FF9E00 104.87%);

@@ -1,12 +1,26 @@
 /* Default CSS */
 
+/* Font Definitions */
 @font-face {
     font-family: "DM-Sans";
-    src: url(assets/fonts/DM-Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf);
-    src: url(assets/fonts/DM-Sans/DMSans-VariableFont_opsz\,wght.ttf);
-    src: url(assets/fonts/opificio/opificio_regular.ttf);
-    src: url(assets/fonts/typo-hoop/Typo_Hoop_Regular_Demo.otf);
- }
+    src: url(assets/fonts/DM-Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf) format('truetype');
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "DM-Sans";
+    src: url(assets/fonts/DM-Sans/DMSans-VariableFont_opsz\,wght.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Opificio";
+    src: url(assets/fonts/opificio/opificio_regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Typo Hoop";
+    src: url(assets/fonts/typo-hoop/Typo_Hoop_Regular_Demo.otf) format('opentype');
+}
 
 /* Ensure consistent overflow handling */
 body {
@@ -25,8 +39,11 @@ body {
     background-color: rgba(255, 255, 255, 0.6);
     overflow: hidden;
     border-bottom: 0px solid #ddd;
-    position: relative;
-    z-index: 2;
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Stick it to the top */
+    left: 0; /* Align with the left edge */
+    width: 100%; /* Full width of the page */
+    z-index: 2; /* Ensure it's on top of other content */
 }
 
 .topnav::after {
@@ -128,7 +145,7 @@ header {
 
 
 /* Media Queries for the navbar */
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 768px) {
     .topnav .topnav-right a {
         display: none;
     }
@@ -138,7 +155,7 @@ header {
     }
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 768px) {
     .topnav.responsive {
         position: relative;
     }
@@ -284,13 +301,25 @@ body.portfolio-page {
     font-size: 24px;
 }
 
-.clickable {
-    cursor: pointer;
+.container-title {
+    color: #858585;
+    display: inline-block;  /* This ensures only the text is clickable */
+    font-family: "Typo Hoop";
+    font-size: 28px;
+    font-style: normal;
 }
 
 .go-to {
     color: var(--Sweet-Purple, #8167E7);
+    display: inline-block;  /* This ensures only the text is clickable */
+    cursor: pointer;
     text-decoration: underline;
+}
+
+.container-title:hover,
+.go-to:hover {
+    cursor: pointer; 
+    color: #31D0F9; 
 }
 
 #stay-tuned {
@@ -347,7 +376,10 @@ body.portfolio-page {
     margin-bottom: 0;
 }
 
-@media only screen and (max-width: 834px) {
+
+/* Index - Responsive CSS */
+
+@media only screen and (max-width: 768px) {
     .intro-container {
         display: none;
     }
@@ -364,13 +396,14 @@ body.portfolio-page {
         width: 100%;
         margin-right: 5%;
         margin-left: 5%;
-        margin-top: 15%;
+        margin-top: 20%;
     }
     #interest-colm1-mobile {
         display: inline-block;
         float: right;
         width: 50%;
         margin-bottom: 5%;
+        margin-top: 10%;
     }
     
     #interest-colm2-mobile {
@@ -425,7 +458,7 @@ body.portfolio-page {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
 
     .intro-mobile {
         font-size: 26px;
@@ -586,6 +619,24 @@ body.portfolio-page {
     margin-left: 50px;
 }
 
+/* Hover effect */
+
+#prototypeButton:hover {
+    background-color: #81E4FF;
+    color: black;
+    border: solid 3px #31D0F9;
+    border-radius: 20px;
+    cursor: pointer; 
+}
+
+#caseStudyButton:hover {
+    background-color: #C4FB8F;
+    color: black;
+    border: solid 3px #ADF16C;
+    border-radius: 20px;
+    cursor: pointer; 
+}
+
 
 .title {
     color: #000;
@@ -651,10 +702,12 @@ body.portfolio-page {
     display: none;
 }
 
+/* Portfolio - Responsive CSS */
 
-@media only screen and (max-width: 834px) {
+
+@media only screen and (max-width: 768px) {
     .description {
-        font-size: 20px;
+        font-size: 18px;
         margin: 5;
     }
 
@@ -663,10 +716,10 @@ body.portfolio-page {
     }
 
     .title {
-        font-size: 26px;
+        font-size: 22px;
         margin: 0;
     }
-    
+
     #prototypeButton {
         width: 160px;
         height: 37px;
@@ -677,6 +730,7 @@ body.portfolio-page {
         width: 160px;
         height: 37px;
         font-size: 16px;
+        margin-left: 25px;
     }
 
     .stay-tuned2 {
@@ -693,17 +747,31 @@ body.portfolio-page {
         padding-top: 30px;
     }
 
-    .portfolio-highlight, .portfolio-intro {
+    .portfolio-highlight {
         font-size: 24px;
+        margin-top: 15%;
+    }
+    
+    .portfolio-intro {
+        font-size: 24px;
+    }
+
+    .portfolio-highlight {
+        font-size: 22px;
+    }
+    
+    .portfolio-intro {
+        font-size: 22px;
     }
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
 
     .portfolio-container {
         background-image: none;
         padding: 0;
+        margin-top: 10%;
     }
     #mobile-thumbnail {
         width: 100%;
@@ -712,7 +780,7 @@ body.portfolio-page {
         vertical-align: top;
     }
     .title {
-        font-size: 22px;
+        font-size: 20px;
         padding-top: 20px;
         padding-left: 20px;
     }
@@ -726,24 +794,29 @@ body.portfolio-page {
         width: 140px;
         height: 38px;
         font-size: 14px;
+        padding: 0;
     }
 
     #caseStudyButton {
         width: 140px;
         height: 38px;
         font-size: 14px;
+        padding: 0;
     }
     .button-container {
-        width: 90%;
-        padding-left: 20px;
-        padding-right: 20px;
+        width: 100%;
         padding-bottom: 20px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
-    .portfolio-highlight, .portfolio-intro {
-        font-size: 22px;
+    .portfolio-highlight {
+        font-size: 20px;
+        margin-top: 25%;
+    }
+    
+    .portfolio-intro {
+        font-size: 20px;
     }
 }
 
@@ -769,9 +842,12 @@ body.portfolio-page {
 }
 
 
-@media only screen and (max-width: 834px) {
+/* About - Responsive CSS */
+
+@media only screen and (max-width: 768px) {
     .about-me-highlight {
         font-size: 26px;
+        margin-top: 20%;
     }
     .about-me-intro {
         font-size: 26px;
@@ -781,7 +857,7 @@ body.portfolio-page {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
     .about-me-highlight {
         font-size: 24px;
         padding-right: 25%;
@@ -797,7 +873,7 @@ body.portfolio-page {
 }
 
 /* Additional responsive design */
-@media only screen and (max-width: 834px) {
+@media only screen and (max-width: 768px) {
 
     body.portfolio-page {
         background-image: url(assets/images/portfolio-tablet.svg);
@@ -810,7 +886,7 @@ body.portfolio-page {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
 
     body.portfolio-page {
         background-image: url(assets/images/portfolio-mobile.svg);
@@ -862,7 +938,7 @@ body.portfolio-page {
     letter-spacing: 0.25px;
 }
 
-@media only screen and (max-width: 834px) {
+@media only screen and (max-width: 768px) {
     .footer-container {
         height: 80px;
     }
@@ -873,7 +949,7 @@ body.portfolio-page {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
     .footer-container {
         height: 70px;
     }
@@ -892,7 +968,7 @@ body.portfolio-page {
 
 
 
-@media only screen and (min-width: 834px) {
+@media only screen and (min-width: 768px) {
     .intro-container-mobile {
         display: none;
     }
