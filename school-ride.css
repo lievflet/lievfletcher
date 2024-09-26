@@ -182,7 +182,21 @@ body.school-ride {
 }
 
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the page takes at least the full height of the viewport */
+}
+
+.content {
+    flex: 1; /* Takes up remaining space */
+    min-height: calc(100vh - 90px); /* Adjust this based on your footer height */
+}
 
 /* Footer style */
 

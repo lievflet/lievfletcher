@@ -22,10 +22,7 @@
     src: url(assets/fonts/typo-hoop/Typo_Hoop_Regular_Demo.otf) format('opentype');
 }
 
-/* Ensure consistent overflow handling */
-body {
-    overflow-x: hidden;
-}
+
 
 /* Apply box-sizing globally */
 *,
@@ -278,9 +275,6 @@ body.portfolio-page {
     width: 30%;
 }
 
-#container-container { 
-    margin-bottom: 50px;
-}
 
 #big-container {
     /* Layout properties */
@@ -348,7 +342,7 @@ body.portfolio-page {
     h2 {
         color: var(--Summer-Aque, #00C9B2);
         font-family: Opificio;
-        font-size: 20px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -374,6 +368,7 @@ body.portfolio-page {
     align-items: flex-end;
     margin-top: 50px;
     margin-bottom: 0;
+    margin-bottom: 50px;
 }
 
 
@@ -452,6 +447,7 @@ body.portfolio-page {
         padding-right: 50px;
         background-image: url(assets/images/bigcontainer-tablet.png);
     }
+
     #container-container {
         margin-top: 0;
     }
@@ -689,7 +685,7 @@ body.portfolio-page {
 
 .stay-tuned2 {
     color: #9A9A9A;
-    font-family: "Typo Hoop Light Demo";
+    font-family: "Typo Hoop";
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -748,16 +744,8 @@ body.portfolio-page {
     }
 
     .portfolio-highlight {
-        font-size: 24px;
-        margin-top: 15%;
-    }
-    
-    .portfolio-intro {
-        font-size: 24px;
-    }
-
-    .portfolio-highlight {
         font-size: 22px;
+        margin-top: 15%;
     }
     
     .portfolio-intro {
@@ -781,15 +769,16 @@ body.portfolio-page {
     }
     .title {
         font-size: 20px;
-        padding-top: 20px;
-        padding-left: 20px;
+        padding: 20px 20px 10px;
     }
     .description {
         font-size: 18px;
-        margin-left: auto;
+        margin-left: 20px;
         margin-right: 20px;
-        width: 90%;
+        width: calc(100% - 40px); /* Account for padding */
+        margin-bottom: 15px; /* Add space after description */
     }
+    
     #prototypeButton {
         width: 140px;
         height: 38px;
@@ -833,7 +822,7 @@ body.portfolio-page {
 }
 
 .about-me-highlight {
-    font-family: "Typo Hoop Demo";
+    font-family: "Typo Hoop";
     color: #00C9B2;
     font-size: 28px;
     font-weight: 400;
@@ -906,7 +895,9 @@ body.portfolio-page {
     padding-left: 20px;
     margin-bottom: -26px;
     background-color: #F0F0F0;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
     width: 100%;
     height: 90px;
 }
@@ -914,11 +905,12 @@ body.portfolio-page {
 .copyright {
     width: 30%;
     display: inline-block;
+    text-align: left;
 }
 
 .contact {
     width: 12%;
-    float: right;
+    text-align: right;
     display: inline-block;
 }
 
@@ -930,7 +922,7 @@ body.portfolio-page {
 
 .footer-text {
     color: #000;
-    font-family: Opificio;
+    font-family: Opificio, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -975,4 +967,20 @@ body.portfolio-page {
     #mobile-container {
         display: none;
     }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the page takes at least the full height of the viewport */
+}
+
+.content {
+    flex: 1; /* Takes up remaining space */
+    min-height: calc(100vh - 90px); /* Adjust this based on your footer height */
 }
