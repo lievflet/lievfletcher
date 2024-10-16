@@ -198,39 +198,40 @@ html, body {
     min-height: calc(100vh - 90px); /* Adjust this based on your footer height */
 }
 
-/* Footer style */
+/* Footer Styles */
 
 
 .footer-container {
     padding-left: 20px;
     margin-bottom: -26px;
     background-color: #F0F0F0;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
     width: 100%;
     height: 90px;
-    margin-top: 100px;
 }
 
 .copyright {
     width: 30%;
     display: inline-block;
+    text-align: left;
 }
 
 .contact {
     width: 12%;
-    float: right;
     display: inline-block;
 }
 
 .links {
     width: 30%;
-    float: right;
     display: inline-block;
 }
 
 .footer-text {
     color: #000;
-    font-family: Opificio;
+    font-family: Opificio, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -263,6 +264,17 @@ html, body {
     }
     .contact {
         width: 15%;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .intro-container-mobile {
+        display: none;
+    }
+    #mobile-container {
+        display: none;
     }
 }
 
