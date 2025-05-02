@@ -10,195 +10,269 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
-
-/* Opificio Font */
-@font-face {
+  }
+  
+  /* Opificio Font */
+  @font-face {
     font-family: "Opificio";
     src: url('/assets/fonts/opificio/opificio_regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
-
-@font-face {
+  }
+  
+  @font-face {
+    font-family: "Opificio";
+    src: url('/assets/fonts/opificio/opificio_bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
     font-family: "Opificio";
     src: url('/assets/fonts/opificio/opificio_rounded.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
-}
-
-/* Varela Round Font */
-@font-face {
+  }
+  
+  /* Varela Round Font */
+  @font-face {
     font-family: "Varela-Round";
     src: url('/assets/fonts/varela-round/VarelaRound-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
-
-/* Typo Hoop Font */
-@font-face {
+  }
+  
+  /* Typo Hoop Font */
+  @font-face {
     font-family: "Typo-Hoop";
     src: url('/assets/fonts/typo-hoop/Typo_Hoop_Regular_Demo.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: "Typo-Hoop-Light";
     src: url('/assets/fonts/typo-hoop/Typo_Hoop_Light_Demo.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+  }
+
 
 /* ========================================
-   GLOBAL STYLES
-   ======================================== */
+ GLOBAL STYLES
+ ======================================== */
 
-   *,
-   *::before,
-   *::after {
+ *,
+ *::before,
+ *::after {
+   box-sizing: border-box;
+ }
+ 
+ body {
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%; /* Ensure body doesn't exceed viewport width */
+    overflow-x: hidden; /* Alternative to preventing overflow without using overflow:hidden globally */
+  }
+ 
+ html, body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   max-width: 100%;
+   overflow-x: hidden;
+ }
+ 
+ body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh; /* Viewport height */
+ }
+ main {
+   flex: 1 0 auto; /* This is the key - it will grow to push footer down */
+ }
+ 
+ body.about-page {
+   font-family: "Opificio", Arial, sans-serif;
+   background-image: url('/assets/images/about.svg');
+   background-size: auto;
+   background-repeat: no-repeat;
+ }
+ 
+ /* ========================================
+  NAVIGATION
+  ======================================== */
+ 
+ .topnav {
+   background-color: rgba(255, 255, 255, 0.6);
+   overflow: hidden;
+   position: relative;
+   z-index: 2;
+ }
+ 
+ .topnav::after {
+   content: "";
+   display: block;
+   width: 100%;
+   height: 4px;
+   background: linear-gradient(90deg, #fcfcfc 0%, #FF85D6 100%);
+   position: absolute;
+   bottom: -2px;
+   left: 0;
+ }
+ 
+ .topnav .logo {
+   float: left;
+   font-size: 25px;
+   font-family: "Typo-Hoop-Light", Arial, sans-serif;
+   font-weight: 300;
+   color: #000;
+   padding: 14px 32px;
+   text-decoration: none;
+ }
+ 
+ .topnav .logo:hover {
+   color: #00cbc4;
+ }
+ 
+ .dots {
+   float: left;
+   padding: 25px 0;
+   margin-left: 0;
+ }
+ 
+ .dot {
+   float: left;
+   width: 15px;
+   height: 15px;
+   background-color: #79E7FF;
+   border-radius: 50%;
+   margin-left: 20px;
+ }
+ 
+ .dot1 { opacity: 1; }
+ .dot2 { opacity: 0.7; }
+ .dot3 { opacity: 0.4; }
+ 
+ .topnav .topnav-right {
+   float: right;
+ }
+ 
+ .topnav .topnav-right a {
+   float: left;
+   color: #000;
+   font-family: "Typo-Hoop-Light", Arial, sans-serif;
+   text-align: center;
+   padding: 20px 20px;
+   text-decoration: none;
+   font-size: 16px;
+   font-weight: 300;
+   position: relative;
+   z-index: 1;
+ }
+ 
+ .topnav .topnav-right a:hover {
+   color: #00cbc4;
+ }
+ 
+ .topnav .topnav-right a::after {
+   content: '';
+   display: block;
+   width: 100%;
+   height: 2px;
+   transition: width .3s;
+ }
+ 
+ .topnav .topnav-right a:hover::after {
+   width: 100%;
+ }
+ 
+ .topnav .icon {
+   display: none;
+   z-index: 2;
+ }
+ 
+ 
+ /* Mobile Navigation Styles */
+ @media screen and (max-width: 576px) {
+   .topnav {
+       width: 100%;
        box-sizing: border-box;
    }
-   
-   body {
-       margin: 0;
-       padding: 0;
-       background: #FFF;
-       background-attachment: fixed;
-       background-size: cover;
-       min-height: 100vh; 
+   .topnav .topnav-right a {
+       display: none;
    }
    
-   html, body {
-       height: 100%;
-       margin: 0;
-       padding: 0;
+   .topnav .topnav-right a.icon {
+       float: right;
+       display: block;
    }
    
-   body {
+   .topnav.responsive {
+       position: relative;
+   }
+   
+   .topnav.responsive .topnav-right .icon {
+       position: absolute;
+       right: 0;
+       top: 0;
+   }
+   
+   .topnav.responsive .topnav-right {
+       float: none;
        display: flex;
        flex-direction: column;
-       min-height: 100vh; /* Viewport height */
-   }
-   main {
-       flex: 1 0 auto; /* This is the key - it will grow to push footer down */
+       align-items: flex-end;
+       padding-top: 40px;
    }
    
-   body.index-page {
-       font-family: "Opificio", Arial, sans-serif;
-       background-image: url('/assets/images/homepagev2.svg');
-       background-size: auto;
-       background-repeat: no-repeat;
-   }
-   
-   /* ========================================
-      NAVIGATION
-      ======================================== */
-   
-   .topnav {
-       background-color: rgba(255, 255, 255, 0.6);
-       overflow: hidden;
-       position: relative;
-       z-index: 2;
-   }
-   
-   .topnav::after {
-       content: "";
+   .topnav.responsive .topnav-right a {
+       float: none;
        display: block;
-       width: 100%;
-       height: 4px;
-       background: linear-gradient(90deg, #fcfcfc 0%, #FF85D6 100%);
-       position: absolute;
-       bottom: -2px;
-       left: 0;
-   }
-   
-   .topnav .logo {
-       float: left;
-       font-size: 25px;
-       font-family: "Typo-Hoop-Light", Arial, sans-serif;
-       font-weight: 300;
-       color: #000;
-       padding: 14px 32px;
-       text-decoration: none;
-   }
-   
-   .topnav .logo:hover {
-       color: #00cbc4;
-   }
-   
-   .dots {
-       float: left;
-       padding: 25px 0;
-       margin-left: 0;
-   }
-   
-   .dot {
-       float: left;
-       width: 15px;
-       height: 15px;
-       background-color: #79E7FF;
-       border-radius: 50%;
-       margin-left: 20px;
-   }
-   
-   .dot1 { opacity: 1; }
-   .dot2 { opacity: 0.7; }
-   .dot3 { opacity: 0.4; }
-   
-   .topnav .topnav-right {
-       float: right;
-   }
-   
-   .topnav .topnav-right a {
-       float: left;
-       color: #000;
-       font-family: "Typo-Hoop-Light", Arial, sans-serif;
-       text-align: center;
-       padding: 20px 20px;
-       text-decoration: none;
-       font-size: 16px;
-       font-weight: 300;
-       position: relative;
+       text-align: right;
+       padding: 14px 16px;
        z-index: 1;
    }
-   
-   .topnav .topnav-right a:hover {
-       color: #00cbc4;
-   }
-   
-   .topnav .topnav-right a::after {
-       content: '';
-       display: block;
-       width: 100;
-       height: 2px;
-       transition: width .3s;
-   }
-   
-   .topnav .topnav-right a:hover::after {
-       width: 100%;
-   }
-   
-   .topnav .icon {
-       display: none;
-       z-index: 2;
-   }
-   
-
-@media screen and (max-width: 992px) {
+ }
+ 
+  
+  /* Mobile Navigation Styles */
+  @media screen and (max-width: 576px) {
+    .topnav {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .topnav .topnav-right a {
+        display: none;
+    }
+    
+    .topnav .topnav-right a.icon {
+        float: right;
+        display: block;
+    }
+    
     .topnav.responsive {
         position: relative;
     }
+    
     .topnav.responsive .topnav-right .icon {
         position: absolute;
         right: 0;
         top: 0;
     }
+    
     .topnav.responsive .topnav-right {
         float: none;
         display: flex;
@@ -206,6 +280,7 @@
         align-items: flex-end;
         padding-top: 40px;
     }
+    
     .topnav.responsive .topnav-right a {
         float: none;
         display: block;
@@ -213,7 +288,7 @@
         padding: 14px 16px;
         z-index: 1;
     }
-}
+  }
 
 
 
@@ -234,7 +309,8 @@
     justify-content: space-between;
     width: 100%;
     padding: 0 5%;
-    margin: 10% 2% 0 2%;
+    margin: 5% 2% 0 2%;
+    box-sizing: border-box; /* Added to include padding in width calculation */
 }
 
 .about-text {
@@ -297,7 +373,8 @@ hr {
     padding: 20px 20px 0 70px; /* Added bottom padding */
     position: relative;
     display: block; /* Changed from inline-block */
-    margin: 40px auto; /* Changed from 20px on all sides to auto left/right */
+    margin: 40px 0 40px 40px;
+    box-sizing: border-box; /* Added to include padding in width calculation */
 }
 
 /* ========================================
@@ -305,13 +382,14 @@ hr {
    ======================================== */
 
 .footer-container {
-    flex-shrink: 0; /* Prevent the footer from shrinking */
+    flex-shrink: 0; /* Prevent footer from shrinking */
     width: 100%;
     background-color: #F0F0F0;
     padding: 20px;
     box-sizing: border-box;
-    margin-top: auto; /* This helps push it to the bottom */
-    position: relative; /* Not fixed or absolute position */
+    position: relative; /* Not fixed */
+    z-index: 2;
+    overflow-x: hidden; /* Prevent child elements from causing overflow */
 }
 
 .copyright {
@@ -330,7 +408,7 @@ hr {
 }
 
 .links {
-    width: 30%;
+    width: 35%;
     float: right;
     display: inline-block;
 }
@@ -353,76 +431,87 @@ hr {
 
 /* Tablet Styles */
 @media only screen and (max-width: 992px) {
-    body.index-page {
-        background-image: url('/assets/images/index-tablet.svg');
+    body.about-page {
+        background-image: url('/assets/images/about-tablet.svg');
+    }
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-image {
+        width: 40%;
+        border-radius: 20px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .about-text {
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    main {
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
     }
 
     #big-container {
         width: 90%; /* Keep your original width */
         height: auto !important; /* Force height to auto */
         min-height: 300px; /* Maintain minimum height */
-        padding: 30px 20px 30px 30px;
-        margin-right: 10px; /* Add some space between containers */
+        padding: 30px 20px 0px 30px;
+        margin-bottom: auto; /* Add extra bottom margin */
     }
     
     .text-style, .contact, .about-me-highlight {
         font-size: 20px;
     }
     
+    .footer-container {
+        position: relative;
+        margin-top: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
 
-    .footer-text,{
+    .footer-text {
         font-size: 16px;
     }
 }
 
-/* Mobile Navigation Styles */
-@media screen and (max-width: 576px) {
-    .topnav {
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .topnav .topnav-right a {
-        display: none;
-    }
-    
-    .topnav .topnav-right a.icon {
-        float: right;
-        display: block;
-    }
-    
-    .topnav.responsive {
-        position: relative;
-    }
-    
-    .topnav.responsive .topnav-right .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    
-    .topnav.responsive .topnav-right {
-        float: none;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding-top: 40px;
-    }
-    
-    .topnav.responsive .topnav-right a {
-        float: none;
-        display: block;
-        text-align: right;
-        padding: 14px 16px;
-        z-index: 1;
-    }
-}
 
 /* Mobile Styles */
 @media only screen and (max-width: 576px) {
-    body.index-page {
-        background-image: url('/assets/images/index-mobile.svg');
+    body.about-page {
+        background-image: url('/assets/images/about-mobile.svg');
     }
 
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 3%;
+        margin: 5% 0 0 0;
+    }
+
+    .profile-image {
+        width: 60%;
+        border-radius: 30px;
+        margin: 30px 0 20px 0; /* Add bottom margin for spacing between image and text */
+        order: 1; /* Make sure image comes first */
+    }
+
+    .about-text {
+        width: 100%;
+        order: 2; /* Text comes after the image */
+        text-align: left; /* Optional: center the text on mobile */
+        padding: 0 10px 0 40px;
+    }
 
     body {
         min-height: 100vh;
@@ -451,21 +540,25 @@ hr {
         padding: 18px 15px;
     }
 
-    #big-container,
-    #small-container {
-        background-image: none;
-        padding: 0;
-        margin: 0;
-        width: 100%;
+    .text-style, .contact, .about-me-highlight {
+        font-size: 16px;
     }
 
+    #big-container {
+        width: 90%; /* Keep your original width */
+        height: auto !important; /* Force height to auto */
+        padding: 30px 20px 0px 30px;
+        margin: 40px 0 0px 20px;
+    }
+
+    /*Footer*/
     .footer-container {
         width: 100%;
         box-sizing: border-box;
         padding: 20px;
         text-align: center;
         margin-top: 0;
-        padding-top: 20px;
+        padding-top: 0;
         border-top: none;
     }
 
@@ -478,7 +571,7 @@ hr {
         text-align: center;
         margin: 0 auto 10px auto;
     }
-    
+
     .copyright {
         margin-bottom: 20px;
     }
@@ -490,16 +583,16 @@ hr {
         margin-bottom: 5px;
         display: block;
     }
-    
+
     .links {
         order: 2; 
     }
-    
+
     .footer-text {
         font-size: 14px;
         margin: 5px 0;
     }
-    
+
     .links p, 
     .links a {
         display: block;
