@@ -1,0 +1,517 @@
+/* ========================================
+   FONTS
+   ======================================== */
+
+/* DM Sans Font */
+@font-face {
+    font-family: "DM-Sans";
+    src: url('/assets/fonts/DM-Sans/DMSans-Italic-VariableFont_opsz,wght.ttf') format('truetype'),
+         url('/assets/fonts/DM-Sans/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Opificio Font */
+@font-face {
+    font-family: "Opificio";
+    src: url('/assets/fonts/opificio/opificio_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Opificio";
+    src: url('/assets/fonts/opificio/opificio_rounded.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Varela Round Font */
+@font-face {
+    font-family: "Varela-Round";
+    src: url('/assets/fonts/varela-round/VarelaRound-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Typo Hoop Font */
+@font-face {
+    font-family: "Typo-Hoop";
+    src: url('/assets/fonts/typo-hoop/Typo_Hoop_Regular_Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Typo-Hoop-Light";
+    src: url('/assets/fonts/typo-hoop/Typo_Hoop_Light_Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
+
+   *,
+   *::before,
+   *::after {
+       box-sizing: border-box;
+   }
+   
+   body {
+       margin: 0;
+       padding: 0;
+       background: #FFF;
+       background-attachment: fixed;
+       background-size: cover;
+       min-height: 100vh; 
+   }
+   
+   html, body {
+       height: 100%;
+       margin: 0;
+       padding: 0;
+   }
+   
+   body {
+       display: flex;
+       flex-direction: column;
+       min-height: 100vh; /* Viewport height */
+   }
+   main {
+       flex: 1 0 auto; /* This is the key - it will grow to push footer down */
+   }
+   
+   body.index-page {
+       font-family: "Opificio", Arial, sans-serif;
+       background-image: url('/assets/images/homepagev2.svg');
+       background-size: auto;
+       background-repeat: no-repeat;
+   }
+   
+   /* ========================================
+      NAVIGATION
+      ======================================== */
+   
+   .topnav {
+       background-color: rgba(255, 255, 255, 0.6);
+       overflow: hidden;
+       position: relative;
+       z-index: 2;
+   }
+   
+   .topnav::after {
+       content: "";
+       display: block;
+       width: 100%;
+       height: 4px;
+       background: linear-gradient(90deg, #fcfcfc 0%, #FF85D6 100%);
+       position: absolute;
+       bottom: -2px;
+       left: 0;
+   }
+   
+   .topnav .logo {
+       float: left;
+       font-size: 25px;
+       font-family: "Typo-Hoop-Light", Arial, sans-serif;
+       font-weight: 300;
+       color: #000;
+       padding: 14px 32px;
+       text-decoration: none;
+   }
+   
+   .topnav .logo:hover {
+       color: #00cbc4;
+   }
+   
+   .dots {
+       float: left;
+       padding: 25px 0;
+       margin-left: 0;
+   }
+   
+   .dot {
+       float: left;
+       width: 15px;
+       height: 15px;
+       background-color: #79E7FF;
+       border-radius: 50%;
+       margin-left: 20px;
+   }
+   
+   .dot1 { opacity: 1; }
+   .dot2 { opacity: 0.7; }
+   .dot3 { opacity: 0.4; }
+   
+   .topnav .topnav-right {
+       float: right;
+   }
+   
+   .topnav .topnav-right a {
+       float: left;
+       color: #000;
+       font-family: "Typo-Hoop-Light", Arial, sans-serif;
+       text-align: center;
+       padding: 20px 20px;
+       text-decoration: none;
+       font-size: 16px;
+       font-weight: 300;
+       position: relative;
+       z-index: 1;
+   }
+   
+   .topnav .topnav-right a:hover {
+       color: #00cbc4;
+   }
+   
+   .topnav .topnav-right a::after {
+       content: '';
+       display: block;
+       width: 100;
+       height: 2px;
+       transition: width .3s;
+   }
+   
+   .topnav .topnav-right a:hover::after {
+       width: 100%;
+   }
+   
+   .topnav .icon {
+       display: none;
+       z-index: 2;
+   }
+   
+
+@media screen and (max-width: 992px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .topnav-right .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive .topnav-right {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 40px;
+    }
+    .topnav.responsive .topnav-right a {
+        float: none;
+        display: block;
+        text-align: right;
+        padding: 14px 16px;
+        z-index: 1;
+    }
+}
+
+
+
+
+/*Body Style*/
+
+.profile-image {
+    width: 30%;
+    border-radius: 50px;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    margin-right: 5%;
+}
+
+.about-container {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5%;
+    margin: 10% 2% 0 2%;
+}
+
+.about-text {
+    width: 60%;
+}
+
+.text-style {
+    font-family: "Opificio", Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 0; /* Remove existing padding */
+    float: none; /* Remove float */
+}
+
+.about-me-highlight {
+    font-family: "Typo-Hoop", Arial, sans-serif;
+    color: #00C9B2;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: left;
+    padding: 5% 0 3% 10%;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    color: #8167E7;
+}
+
+.contact {
+    font-family: "Typo-Hoop", Arial, sans-serif;
+    color: #86DF31;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.resume {
+    color: #FF85D6;
+}
+.resume:hover {
+    color: #6E6E6E;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    margin: 15px 0; /* Controls spacing between links */
+    visibility: hidden;
+}
+
+#big-container {
+    background-image: url('/assets/images/bigcontainer.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 90%;
+    height: auto; /* Allow height to adjust to content */
+    min-height: 300px; /* Maintain minimum height */
+    padding: 20px 20px 0 70px; /* Added bottom padding */
+    position: relative;
+    display: block; /* Changed from inline-block */
+    margin: 40px auto; /* Changed from 20px on all sides to auto left/right */
+}
+
+/* ========================================
+   FOOTER STYLES
+   ======================================== */
+
+.footer-container {
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+    width: 100%;
+    background-color: #F0F0F0;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: auto; /* This helps push it to the bottom */
+    position: relative; /* Not fixed or absolute position */
+}
+
+.copyright {
+    width: 30%;
+    display: inline-block;
+}
+
+.contact-desktop {
+    width: 12%;
+    float: right;
+    display: inline-block;
+}
+
+.contact-mobile {
+    display: none;
+}
+
+.links {
+    width: 30%;
+    float: right;
+    display: inline-block;
+}
+
+.links > a:hover {
+    color: #6E6E6E;
+}
+
+.footer-text {
+    color: #000;
+    font-family: "Opificio", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+}
+
+/* ========================================
+   MEDIA QUERIES
+   ======================================== */
+
+/* Tablet Styles */
+@media only screen and (max-width: 992px) {
+    body.index-page {
+        background-image: url('/assets/images/index-tablet.svg');
+    }
+
+    #big-container {
+        width: 90%; /* Keep your original width */
+        height: auto !important; /* Force height to auto */
+        min-height: 300px; /* Maintain minimum height */
+        padding: 30px 20px 30px 30px;
+        margin-right: 10px; /* Add some space between containers */
+    }
+    
+    .text-style, .contact, .about-me-highlight {
+        font-size: 20px;
+    }
+    
+
+    .footer-text,{
+        font-size: 16px;
+    }
+}
+
+/* Mobile Navigation Styles */
+@media screen and (max-width: 576px) {
+    .topnav {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .topnav .topnav-right a {
+        display: none;
+    }
+    
+    .topnav .topnav-right a.icon {
+        float: right;
+        display: block;
+    }
+    
+    .topnav.responsive {
+        position: relative;
+    }
+    
+    .topnav.responsive .topnav-right .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .topnav.responsive .topnav-right {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 40px;
+    }
+    
+    .topnav.responsive .topnav-right a {
+        float: none;
+        display: block;
+        text-align: right;
+        padding: 14px 16px;
+        z-index: 1;
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 576px) {
+    body.index-page {
+        background-image: url('/assets/images/index-mobile.svg');
+    }
+
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        flex: 1 0 auto;
+    }
+
+    .dots {
+        padding: 25px 0;
+    }
+    
+    .dot {
+        float: left;
+        width: 12px;
+        height: 12px;
+        background-color: #79E7FF;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+
+    html body .topnav .logo {
+        font-size: 20px !important;
+        padding: 18px 15px;
+    }
+
+    #big-container,
+    #small-container {
+        background-image: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .footer-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        text-align: center;
+        margin-top: 0;
+        padding-top: 20px;
+        border-top: none;
+    }
+
+    .copyright, 
+    .contact-mobile, 
+    .links {
+        width: 100%;
+        float: none;
+        display: block;
+        text-align: center;
+        margin: 0 auto 10px auto;
+    }
+    
+    .copyright {
+        margin-bottom: 20px;
+    }
+    .contact-desktop {
+        display: none;
+    }
+    .contact-mobile {
+        order: 1; 
+        margin-bottom: 5px;
+        display: block;
+    }
+    
+    .links {
+        order: 2; 
+    }
+    
+    .footer-text {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    
+    .links p, 
+    .links a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+
+
+
+
+
+
+
+

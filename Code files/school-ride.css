@@ -1,9 +1,48 @@
- @font-face {
+/* DM Sans Font */
+@font-face {
     font-family: "DM-Sans";
-    src: url(assets/fonts/DM-Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf);
-    src: url(assets/fonts/DM-Sans/DMSans-VariableFont_opsz\,wght.ttf);
-    src: url(assets/fonts/opificio/opificio_regular.ttf);
- }
+    src: url('/assets/fonts/DM-Sans/DMSans-Italic-VariableFont_opsz/,wght.ttf') format('truetype'),
+         url('/assets/fonts/DM-Sans/DMSans-VariableFont_opsz/,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Opificio Font */
+@font-face {
+    font-family: "Opificio";
+    src: url('/assets/fonts/opificio/opificio_regular.ttf') format('truetype'),
+         url('/assets/fonts/opificio/opificio_rounded.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Varela Round Font */
+@font-face {
+    font-family: "Varela-Round";
+    src: url('/assets/fonts/varela-round/VarelaRound-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Typo Hoop Font */
+@font-face {
+    font-family: "Typo-Hoop";
+    src: url('/assets/fonts/typo-hoop/Typo_Hoop_Regular_Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Typo-Hoop-Light";
+    src: url('/assets/fonts/typo-hoop/Typo_Hoop_Light_Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* Ensure consistent overflow handling */
 body {
@@ -40,7 +79,7 @@ body {
 .topnav .logo {
     float: left;
     font-size: 25px;
-    font-family: "Typo Hoop Light Demo";
+    font-family: "Typo-Hoop-Light", Arial, sans-serif;
     font-weight: 300;
     color: #000;
     padding: 14px 32px;
@@ -83,7 +122,7 @@ body {
 .topnav .topnav-right a {
     float: left;
     color: #000;
-    font-family: "Typo Hoop Light Demo";
+    font-family: "Typo-Hoop-Light", Arial, sans-serif;
     text-align: center;
     padding: 20px 20px;
     text-decoration: none;
@@ -156,7 +195,7 @@ body {
 
 /* Page-specific styles with consistent overflow handling */
 body.school-ride {
-    font-family: "Opificio";
+    font-family: "Opificio", Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: #FCFCFC;
@@ -200,7 +239,7 @@ body.school-ride {
 footer {
     background-color: #E5E5E5;
     color: #000;
-    font-family: Opificio;
+    font-family: "Opificio", Arial, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -262,7 +301,7 @@ aside {
 #school-ride {
     color: #000;
     text-align: center;
-    font-family: Opificio;
+    font-family: "Opificio", Arial, sans-serif;
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
@@ -275,7 +314,7 @@ aside {
 
 #a-carpool {
     color: #000;
-    font-family: Opificio;
+    font-family: "Opificio", Arial, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -313,7 +352,7 @@ aside {
 
 .section-text {
     color: #000;
-    font-family: "Typo Hoop Demo";
+    font-family: "Typo-Hoop", Arial, sans-serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -343,7 +382,7 @@ aside {
 
 p {
     color: #000;
-    font-family: "DM-Sans";
+    font-family: "DM-Sans", Arial, Helvetica, sans-serif;
     font-size: 26px;
     font-style: normal;
     font-weight: 400;
@@ -353,7 +392,7 @@ p {
 li {
     list-style-type: square;
     color: #000;
-    font-family: "DM-Sans";
+    font-family: "DM-Sans", Arial, Helvetica, sans-serif;
     font-size: 26px;
     font-style: normal;
     font-weight: 400;
@@ -367,13 +406,13 @@ ul {
 
 h1 {
     padding-left: 4%;
-    font-family: "DM-Sans";
+    font-family: "DM-Sans", Arial, Helvetica, sans-serif;
 }
 
 h2 {
     font-size: 26px;
     padding-left: 4%;
-    font-family: "DM-Sans";
+    font-family: "DM-Sans", Arial, Helvetica, sans-serif;
 }
 
 th {
@@ -393,7 +432,7 @@ th {
 
 figcaption {
     color: #7A7A7A;
-    font-family: "DM-Sans";
+    font-family: "DM-Sans", Arial, Helvetica, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -460,7 +499,7 @@ td {
 
 #view_prototype {
     color: var(--Summer-Aque, #00C9B2);
-    font-family: "DM-Sans";
+    font-family: "DM-Sans", Arial, Helvetica, sans-serif;
     font-size: 26px;
     font-style: normal;
     font-weight: 500;
@@ -480,7 +519,7 @@ td {
 
 #thank_you {
     color: var(--Fruit-orange, #FAAB11);
-    font-family: "Typo Hoop Light Demo";
+    font-family: "Typo-Hoop-Light", Arial, sans-serif;
     font-size: 26px;
     font-style: normal;
     font-weight: 400;
@@ -517,7 +556,7 @@ td {
 
 .footer-text {
     color: #000;
-    font-family: Opificio;
+    font-family: "Opificio", Arial, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;

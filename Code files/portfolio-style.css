@@ -1,0 +1,186 @@
+/* DM Sans Font */
+@font-face {
+  font-family: "DM-Sans";
+  src: url('/assets/fonts/DM-Sans/DMSans-Italic-VariableFont_opsz/,wght.ttf') format('truetype'),
+       url('/assets/fonts/DM-Sans/DMSans-VariableFont_opsz/,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Opificio Font */
+@font-face {
+  font-family: "Opificio";
+  src: url('/assets/fonts/opificio/opificio_regular.ttf') format('truetype'),
+       url('/assets/fonts/opificio/opificio_rounded.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Varela Round Font */
+@font-face {
+  font-family: "Varela-Round";
+  src: url('/assets/fonts/varela-round/VarelaRound-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Typo Hoop Font */
+@font-face {
+  font-family: "Typo-Hoop";
+  src: url('/assets/fonts/typo-hoop/Typo_Hoop_Regular_Demo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Typo-Hoop-Light";
+  src: url('/assets/fonts/typo-hoop/Typo_Hoop_Light_Demo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Portfolio */
+
+
+  
+.portfolio-intro {
+  font-family: "Opificio", Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  padding-right: 15%;
+  padding-left: 15%;
+  width: 100%;
+  text-align: center;
+}
+
+.portfolio-highlight {
+  font-family: "Typo-Hoop", Arial, sans-serif;
+  color: #8167E7;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.portfolio-container{
+  border-radius: 10px;
+  border: 1px solid #E7E7E7;
+  background: rgba(185, 185, 185, 0.10);
+  backdrop-filter: blur(10px);
+  padding: 2%;
+  background-image: url(assets/images/portfolio-sr.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 66%;
+  height: 426px;
+  
+}
+
+#prototypeButton {
+  background-color: #31D0F9;
+  border: solid 3px #81E4FF;
+  border-radius: 20px;
+  width: 226px;
+  height: 51px;
+  flex-shrink: 0;
+  font-family: "Opificio", Arial, sans-serif;
+  font-size: 20px;
+}
+
+#caseStudyButton {
+  background-color: #ADF16C;
+  border: solid 3px #C4FB8F;
+  border-radius: 20px;
+  width: 226px;
+  height: 51px;
+  flex-shrink: 0;
+  font-family: "Opificio", Arial, sans-serif;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .highlight {
+     padding-right: 25%;
+     padding-top: 25%;
+     font-size: 25px;
+  }
+  .intro {
+    font-size: 25px;
+    padding-right: 25%;
+    padding-left: 25%
+  }
+  body.portfolio-page {
+    background-image:     url(assets/images/portfolio-tablet.svg);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .highlight {
+    padding-right: 25%;
+    padding-top: 25%;
+    font-size: 20px;
+ }
+ .intro {
+   font-size: 20px;
+   padding-right: 25%;
+   padding-left: 25%
+ }
+  body.portfolio-page {
+    background-image:     url(assets/images/portfolio-mobile.svg);
+  }
+}
+
+
+/* Footer Styles */
+
+
+.footer-container {
+  padding-left: 20px;
+  margin-bottom: -26px;
+  background-color: #F0F0F0;
+  display: inline-block;
+  width: 100%;
+  height: 90px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  position: relative;
+  bottom:0;
+  left:0;
+}
+
+.copyright {
+  width: 30%;
+  display: inline-block;
+}
+
+.contact {
+  width: 12%;
+  float: right;
+  display: inline-block;
+}
+
+.links {
+  width: 30%;
+  float: right;
+  display: inline-block;
+}
+
+.footer-text {
+  color: #000;
+  font-family: "Opificio", Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.25px;
+}
+
