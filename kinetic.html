@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Ride - Case Study</title>
+    <link rel="stylesheet" href="kinetic.css" />
+    <script src="script.js"></script>
+  </head>
+<body class="school-ride">
+    <!-- Inline Navbar HTML -->
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="logo">Liev Fletcher</a>
+            <span class="dots">
+                <span class="dot dot1"></span>
+                <span class="dot dot2"></span>
+                <span class="dot dot3"></span>
+            </span>
+            <div class="topnav-right">
+                <a href="about.html">about</a>
+                <a href="portfolio.html">portfolio</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+            </div>
+     </header>
+     <div class="container">
+        <div class="grid-container">
+            <div></div>
+            <div id="school-ride">
+                School Ride
+            </div>
+            <div id="a-carpool">
+                A carpool app for parents of school-aged children.
+            </div>
+            <div class="role">
+                Role: Designer
+            </div>
+            <div class="scope">
+                Scope: 2 Months
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/school-ride_mockup.svg">
+            </div>
+        </div>
+        </div>
+            <div class="section-padding">
+                <div id="introduction"> 
+                    <p class="section-text"> introduction</p>
+                </div>
+            </div>
+        </body>
+        <table class="text-padding" class="table">
+            <tr>
+                <th></th><th></th>
+            </tr>
+            <tr>
+            <td><h2>Overview</h2></td>
+        <td><p>
+            School Ride is a carpool app for parents. Users can create and/or 
+            join local carpools that will get their kids to and from school.
+        </p></td>
+            </tr>
+            <tr>
+            <td><h2>Role</h2></td>
+        <td><p>
+            Role: Designer <br>
+            Scope: 2 months <br>
+            Platform: iOS Mobile App
+        </p></td>
+            </tr>
+            <tr>
+        <td><h2>Responsibilities</h2></td>
+        <td><p>I handled all aspects of the design process from beginning to end, as the singular 
+            designer working on this project.</p></td>
+            </tr>
+        </table>
+        <hr class="divider"></hr>
+        <div class="text-padding">
+            <h1>Goal</h1>
+            <p>The focus of this project was to provides users with a convenient way to get their 
+            kids to school that works for their schedule. The app needed to be flexible and 
+            easy to use so that parents can join carpools without a hassle. <br>
+            The number one priority was the safety of the children. The app must make the 
+            user&rsquo;s feel that it is secure and trustworthy, and live up to those expectations.</p>
+            <br>
+            <ul>
+                <h1>Challenges</h1>
+                <li>Safety barriers need to be in place to protect sensitive information.</li>
+                <li>Designs must be equitable and accessible.</li>
+                <li>Develop an in-app culture that encourages safety and protection.</li>
+            </ul>
+        </div>
+        <div>
+            <div class="section-padding">
+                <div id="research"> 
+                    <p class="section-text">research</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-padding">
+            <h1>Competitive Audit</h1>
+            <p>
+                Research began by look into apps other carpool apps that shared the same target users as my app. 
+                By reading the reviews of those apps I learned which demographics would need to be represented in 
+                my personas, as well as what other app&rsquo;s were lacking. <br><br>
+                From this I created three personas to represent each user&rsquo;s situation/demographic.
+            </p>
+            <img  class="desktop-image" src="assets/images/horizontal-personas.png" alt="User Persona">
+            <img  class="mobile-image" src="assets/images/vertical-personas.png" alt="User Persona">
+            <figcaption>
+                User personas.
+            </figcaption>
+        </div>
+        <hr class="divider"></hr>
+        <div class="text-padding">
+            <h1>Pain Points</h1>
+            <p>
+                My research also revealed these pain points in the competitor&rsquo;s apps.
+                <br><br>
+                Other apps...
+            </p>
+            <ul>
+                <li>Do not consider the number of seats available in a carpool.</li>
+                <li>Do not show a list of carpool&rsquo;s the user has joined.</li>
+                <li>Do not let you refine results based on schedule, or individual child.</li>
+            </ul>
+            <p>All of these pain point&rsquo;s would be addressed in my final prototype.</p>
+        </div>
+        <div>
+            <div class="section-padding"></div>
+                <div id="design">
+                    <pre class="section-text">design process</pre>
+                </div>
+            </div>
+        </div>
+        <div class="text-padding">
+            <h1>Paper Wireframes</h1>
+        <table>
+            <tr>
+                <td>
+                    <img src="assets/images/paperframe_a.png" alt="Homepage A"
+                    class="paperframe">
+                    <figcaption>Homepage A</figcaption>
+                </td>
+                <td>
+                    <img src="assets/images/paperframe_b.png" alt="Homepage B"
+                    class="paperframe">
+                    <figcaption>Homepage B</figcaption>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="assets/images/paperframe_c.png" alt="Homepage C"
+                    class="paperframe">
+                    <figcaption>Homepage C</figcaption>
+                </td>
+                <td>
+                    <img src="assets/images/paperframe_d.png" alt="Homepage D"
+                    class="paperframe">
+                    <figcaption>Homepage D</figcaption>
+            </tr>
+        </table>
+        </div>
+        <hr class="divider"></hr>
+        <div class="text-padding">
+            <h1>User Flow</h1>
+            <p>
+                My initial user flow for creating a new carpool. The final app does not include
+                the ability to search a school before getting to the create carpool form.
+            </p>
+            <div class="userflow">
+                <img class="image" src="assets/images/user-flow.png" alt="User flow" class="userflow">
+                <figcaption>User Flow for creating a carpool.</figcaption>
+            </div>
+        </div>
+        <div class="text-padding">
+            <h1>Low Fidelity</h1>
+            <table class="table_padding">
+                <tr>
+                    <td>
+                        <img src="assets/images/lofi_a.png" alt="Lo-Fi Homepage" 
+                        class="lofi">
+                        <figcaption>Lo-Fi homepage.</figcaption>
+                    </td>
+                    <td>
+                        <img src="assets/images/lofi_b.png" alt="Lo-Fi User Profile"
+                        class="lofi">
+                        <figcaption>Lo-Fi user profile.</figcaption>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="assets/images/lofi_c.png" alt="Lo-Fi Carpool Page"
+                        class="lofi">
+                        <figcaption>Lo-Fi carpool page.</figcaption>
+                    </td>
+                    <td>
+                        <img src="assets/images/lofi_d.png" alt="Lo-Fi Carpool Form"
+                        class="lofi">
+                        <figcaption>Lo-Fi create carpool form.</figcaption>
+                    </td>
+                </tr>
+            </table>
+            <br>
+                <p>
+                    While the final homepage will be heavily iterated on, the core idea is the same.
+                    However, the other pages remain true to their final designs.
+                </p>
+        </div>
+        <hr class="divider"></hr>
+        <div class="text-padding">
+            <h1>Design Iterations</h1>
+            <table class="table_padding">
+                <tr class="iteration">
+                    <td style="border-right: 1px solid black">
+                        <h2>First Iteration</h2>
+                        <p style="text-decoration: underline;">Issues:</p>
+                        <ul>
+                            <li>cards are too small</li>
+                            <li>homepage feels crowded</li>
+                            <li>designs are bland</li>
+                        </ul>
+                    </td>
+                    <td style="border-right: 1px solid black">
+                        <h2>Second Iteration</h2>
+                        <p style="text-decoration: underline;">Changes:</p>
+                        <ul>
+                            <li>cards are bigger</li>
+                            <li>easier to read</li>
+                            <li>more personality</li>
+                        </ul>
+                        <p style="text-decoration: underline;">Issues:</p>
+                        <ul>
+                            <li>too repetitive</li>
+                            <li>top bar needs work</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h2>Final Iteration</h2>
+                        <p style="text-decoration: underline;">Changes</p>
+                        <ul>
+                            <li>cards have customization</li>
+                            <li>improved top bar</li>
+                            <li>colors are balanced</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="iteration">
+                    <td>
+                        <img class="homepage" src="assets/images/homepage1.png" alt="Homepage no.1">
+                        <figcaption>Homepage, first iteraion.</figcaption>
+                    </td>
+                    <td>
+                        <img class="homepage" src="assets/images/homepage2.png" alt="Homepage no.2">
+                        <figcaption>Homepage, second iteration.</figcaption>
+                    </td>
+                    <td>
+                        <img class="homepage" src="assets/images/homepage3.png" alt="Homepage no.3">
+                        <figcaption>Homepage, final iteration.</figcaption>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <hr class="divider"></hr>
+        <div class="text-padding">
+            <table class="table_padding">
+                <tr class="iteration">
+                    <td style="border-right: 1px solid black">
+                        <h2>First Iteration</h2>
+                        <p style="text-decoration: underline;">Issues:</p>
+                        <ul>
+                            <li>colors are flat and bland</li>
+                            <li>layout needs work</li>
+                        </ul>
+                    </td>
+                    <td style="border-right: 1px solid black">
+                        <h2>Second Iteration</h2>
+                        <p style="text-decoration: underline;">Changes:</p>
+                        <ul>
+                            <li>matches the homepage customization</li>
+                            <li>added hashtags</li>
+                            <li>improved layout</li>
+                        </ul>
+                        <p style="text-decoration: underline;">Issues:</p>
+                        <ul>
+                            <li>information is crowded</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h2>Final Iteration</h2>
+                        <p style="text-decoration: underline;">Changes</p>
+                        <ul>
+                            <li>"Join Carpool" moved to the top</li>
+                            <li>profile is in its own section</li>
+                            <li>information is bigger and better spaced</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="iteration">
+                    <td>
+                        <img class="homepage" src="assets/images/carpool_page1.png" alt="Carpool Page no.1">
+                        <figcaption>Carpool page, first iteraion.</figcaption>
+                    </td>
+                    <td>
+                        <img class="homepage" src="assets/images/carpool_page2.png" alt="Carpool Page no.2">
+                        <figcaption>Carpool page, second iteration.</figcaption>
+                    </td>
+                    <td>
+                        <img class="homepage" src="assets/images/carpool_page3.png" alt="Carpool Page no.3">
+                        <figcaption>Carpool page, final iteration.</figcaption>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <hr class="divider"></hr>
+        <div class="text-padding">
+            <h1>Breakthrough</h1>
+            <p>A major breakthrough point for me was designing the card customization. I was struggling with 
+                feelings of insecurity with my designs. I felt that they were too bland and amateur.
+            </p>
+            <p>
+                I came up with many designs for the card&rsquo;s, and not all made the cut. I  altered the color 
+                palettes for clarity and consistency several times until I felt it would be interesting but 
+                not distracting from the information.
+                The addition of these cards took the Homepage from dull to vibrant.
+            </p>
+            <p>
+                This is the final component set, with 7 color choices, and 5 patterns:
+            </p>
+            <img class="image" src="assets/images/color_cards.png" alt="Color Cards">
+            <figcaption>Card customization.</figcaption>
+        </div>
+        <hr class="divider"></hr>
+        <div class="text-padding">
+            <h1>Final Prototype</h1>
+            <img class="image" src="assets/images/final_prototype.png" alt="Final prototype">
+            <figcaption>Final prototype mockup.</figcaption>
+            <p>
+                The final result was a comprehensive carpool app that allowed users to create or join carpools, 
+                and communicate with drivers or passengers through an in-app messaging system.
+                <br>
+                Safety features:
+            </p>
+            <ol>
+                <li> sensitive information like addresses, or phone numbers are hidden unless the user has 
+                    approved for you to view it</li>
+                <li>in app messaging system allows parents to coordinate meet ups with drivers and passengers</li>
+            </ol>
+            <p>
+                Carpools can be views on the homepage, and results can be refined by schedule, school, or 
+                individual child.  Users manage their carpools in one place with ease, making leaving carpools 
+                or deleting carpools simple. Top bar allows users to reach the notification center, messages, 
+                profile, create a carpool, or return to home from anywhere in the app.
+                <br>
+                Notification center tells drivers or passengers of any changes to carpools, as well as new 
+                messages, and information access requests.
+            </p>
+            <br>
+            <p id="view_prototype">View Prototype &rarr;</p>
+        </div>
+        <div>
+            <div class="section-padding">
+                <div id="final_reflection"> 
+                    <pre class="section-text">final reflection</pre>
+                </div>
+            </div>
+        </div>
+        <div class="text-padding">
+            <p>
+                This was my first design project ever. I learned everything about figma and design from 
+                creating this app. It taught me the whole design process, begin to end. It also gave me confidence 
+                and experience with designing, which is priceless. 
+                <br>
+                It was deeply satisfying to see the final product after all my hard work. I really enjoyed 
+                brainstorming all the possibilities and needs of my users, and then getting to bring my ideas into
+                 reality. My app got bigger and more thorough as I went along and it was a lot of fun. 
+                <br>
+                What I learned:
+            </p>
+            <ol>
+                <li>
+                    How to establish trust with users
+                </li>
+                <li>
+                    Ways to profect information with design features
+                </li>
+                <li>
+                    How to fit a lot of information into a small space
+                </li>
+                <li>
+                    All the steps of the design process, from beginning to end
+                </li>
+                <li>
+                    Most imporantly, how to use Figma!
+                </li>
+            </ol>
+        </div>
+        <div class="text-padding" id="thank_you">
+            Thank you for reading my case study!
+        </div>
+    </div>
+    <footer class="footer-container">
+        <div class="copyright">
+            <p class="footer-text">Copyright Liev Fletcher 2024</p>
+        </div>
+        <div class="links">
+            <p class="footer-text">lievflet@gmail.com</p>
+            <a class="footer-text" href="www.linkedin.com/in/liev-fletcher">www.linkedin.com/in/liev-fletcher</a>
+        </div>
+        <div class="contact">
+            <p class="footer-text"> Contact:</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+

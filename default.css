@@ -407,7 +407,7 @@ a {
     flex-shrink: 0; /* Prevent the footer from shrinking */
     width: 100%;
     background-color: #F0F0F0;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     box-sizing: border-box;
     margin-top: auto; /* This helps push it to the bottom */
     position: relative; /* Not fixed or absolute position */

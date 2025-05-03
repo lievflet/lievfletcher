@@ -1,6 +1,6 @@
-<svg width="1440" height="1280" viewBox="0 0 1440 1280" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1948" height="1280" viewBox="0 0 1948 1280" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_1002_5154)">
-<rect width="1440" height="1280" fill="#FCFCFC"/>
+<rect width="1948" height="1280" fill="#FCFCFC"/>
 <g opacity="0.1">
 <circle cx="1138.5" cy="336.5" r="777" stroke="#8167E7" stroke-width="3"/>
 <circle cx="1138.5" cy="336.5" r="769" stroke="#8167E7" stroke-width="3"/>
@@ -103,7 +103,7 @@
 </g>
 <defs>
 <clipPath id="clip0_1002_5154">
-<rect width="1440" height="1280" fill="white"/>
+<rect width="1948" height="1280" fill="white"/>
 </clipPath>
 </defs>
 </svg>
