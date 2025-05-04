@@ -8,8 +8,9 @@
     <script src="script.js"></script>
   </head>
 <body class="school-ride">
-    <!-- Inline Navbar HTML -->
     <header>
+     </header>
+     <main>
         <div class="topnav" id="myTopnav">
             <a href="index.html" class="logo">Liev Fletcher</a>
             <span class="dots">
@@ -22,34 +23,42 @@
                 <a href="portfolio.html">portfolio</a>
                 <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
             </div>
-     </header>
-     <div class="container">
-        <div class="grid-container">
-            <div></div>
-            <div id="school-ride">
-                School Ride
             </div>
-            <div id="a-carpool">
-                A carpool app for parents of school-aged children.
-            </div>
-            <div class="role">
-                Role: Designer
-            </div>
-            <div class="scope">
-                Scope: 2 Months
-            </div>
-            <div class="hero-image">
-                <img src="assets/images/school-ride_mockup.svg">
-            </div>
+        <div id="hero-image">
+            <img src="assets/images/sr-hero.png" alt="School Ride Mockup" id="mockup">
         </div>
-        </div>
-            <div class="section-padding">
-                <div id="introduction"> 
+        <span id="title">
+            <h1>School Ride</h1>
+            <p>A carpool app for parents of school-aged children.</p>
+        </span>
+        <a href="https://www.figma.com/proto/kANx2EhA5WfBpb9WR38y1L/School-Ride?page-id=107%3A147&node-id=332-24792&p=f&viewport=165%2C435%2C0.04&t=feb4thwv5rygXheb-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=332%3A24792&show-proto-sidebar=1" id="button-link" target="_blank"> 
+            <div id="button">
+                <p>View Prototype</p>    
+            </div>
+        </a>
+            <div id="introduction"> 
                     <p class="section-text"> introduction</p>
-                </div>
             </div>
-        </body>
-        <table class="text-padding" class="table">
+            <div class="section-shadow"></div>
+        <div class="mobile-intro text-padding">
+            <h3>Overview</h3>
+            <p>
+                School Ride is a carpool app for parents. Users can create and/or 
+                join local carpools that will get their kids to and from school.
+            </p>
+            <h3>Role</h3>
+            <p>
+                Role: Designer <br>
+                Scope: 2 months <br>
+                Platform: iOS Mobile App
+            </p>
+            <h3>Responsibilities</h3>
+            <p>
+                I handled all aspects of the design process from beginning to end, as the singular 
+                designer working on this project.
+            </p>
+        </div>
+        <table class="text-padding table base-intro">
             <tr>
                 <th></th><th></th>
             </tr>
@@ -91,11 +100,10 @@
             </ul>
         </div>
         <div>
-            <div class="section-padding">
-                <div id="research"> 
-                    <p class="section-text">research</p>
-                </div>
-            </div>
+            <div id="research"> 
+                <p class="section-text">research</p>
+        </div>
+            <div class="section-shadow"></div>
         </div>
         <div class="text-padding">
             <h1>Competitive Audit</h1>
@@ -105,8 +113,7 @@
                 my personas, as well as what other app&rsquo;s were lacking. <br><br>
                 From this I created three personas to represent each user&rsquo;s situation/demographic.
             </p>
-            <img  class="desktop-image" src="assets/images/horizontal-personas.png" alt="User Persona">
-            <img  class="mobile-image" src="assets/images/vertical-personas.png" alt="User Persona">
+            <img  class="expandable" src="assets/images/horizontal-personas.png" alt="User Persona">
             <figcaption>
                 User personas.
             </figcaption>
@@ -127,11 +134,10 @@
             <p>All of these pain point&rsquo;s would be addressed in my final prototype.</p>
         </div>
         <div>
-            <div class="section-padding"></div>
-                <div id="design">
-                    <pre class="section-text">design process</pre>
-                </div>
-            </div>
+            <div id="design-process"> 
+                <p class="section-text">design process</p>
+        </div>
+            <div class="section-shadow"></div>
         </div>
         <div class="text-padding">
             <h1>Paper Wireframes</h1>
@@ -139,24 +145,24 @@
             <tr>
                 <td>
                     <img src="assets/images/paperframe_a.png" alt="Homepage A"
-                    class="paperframe">
+                    class="paperframe expandable">
                     <figcaption>Homepage A</figcaption>
                 </td>
                 <td>
                     <img src="assets/images/paperframe_b.png" alt="Homepage B"
-                    class="paperframe">
+                    class="paperframe expandable">
                     <figcaption>Homepage B</figcaption>
                 </td>
             </tr>
             <tr>
                 <td>
                     <img src="assets/images/paperframe_c.png" alt="Homepage C"
-                    class="paperframe">
+                    class="paperframe expandable">
                     <figcaption>Homepage C</figcaption>
                 </td>
                 <td>
                     <img src="assets/images/paperframe_d.png" alt="Homepage D"
-                    class="paperframe">
+                    class="paperframe expandable">
                     <figcaption>Homepage D</figcaption>
             </tr>
         </table>
@@ -169,7 +175,7 @@
                 the ability to search a school before getting to the create carpool form.
             </p>
             <div class="userflow">
-                <img class="image" src="assets/images/user-flow.png" alt="User flow" class="userflow">
+                <img class="image expandable" src="assets/images/user-flow.png" alt="User flow" class="userflow">
                 <figcaption>User Flow for creating a carpool.</figcaption>
             </div>
         </div>
@@ -179,24 +185,24 @@
                 <tr>
                     <td>
                         <img src="assets/images/lofi_a.png" alt="Lo-Fi Homepage" 
-                        class="lofi">
+                        class="outline expandable">
                         <figcaption>Lo-Fi homepage.</figcaption>
                     </td>
                     <td>
                         <img src="assets/images/lofi_b.png" alt="Lo-Fi User Profile"
-                        class="lofi">
+                        class="outline expandable">
                         <figcaption>Lo-Fi user profile.</figcaption>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <img src="assets/images/lofi_c.png" alt="Lo-Fi Carpool Page"
-                        class="lofi">
+                        class="outline expandable">
                         <figcaption>Lo-Fi carpool page.</figcaption>
                     </td>
                     <td>
                         <img src="assets/images/lofi_d.png" alt="Lo-Fi Carpool Form"
-                        class="lofi">
+                        class="outline expandable">
                         <figcaption>Lo-Fi create carpool form.</figcaption>
                     </td>
                 </tr>
@@ -210,64 +216,151 @@
         <hr class="divider"></hr>
         <div class="text-padding">
             <h1>Design Iterations</h1>
-            <table class="table_padding">
-                <tr class="iteration">
-                    <td style="border-right: 1px solid black">
-                        <h2>First Iteration</h2>
-                        <p style="text-decoration: underline;">Issues:</p>
-                        <ul>
-                            <li>cards are too small</li>
-                            <li>homepage feels crowded</li>
-                            <li>designs are bland</li>
-                        </ul>
-                    </td>
-                    <td style="border-right: 1px solid black">
-                        <h2>Second Iteration</h2>
-                        <p style="text-decoration: underline;">Changes:</p>
-                        <ul>
-                            <li>cards are bigger</li>
-                            <li>easier to read</li>
-                            <li>more personality</li>
-                        </ul>
-                        <p style="text-decoration: underline;">Issues:</p>
-                        <ul>
-                            <li>too repetitive</li>
-                            <li>top bar needs work</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <h2>Final Iteration</h2>
-                        <p style="text-decoration: underline;">Changes</p>
-                        <ul>
-                            <li>cards have customization</li>
-                            <li>improved top bar</li>
-                            <li>colors are balanced</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr class="iteration">
-                    <td>
-                        <img class="homepage" src="assets/images/homepage1.png" alt="Homepage no.1">
-                        <figcaption>Homepage, first iteraion.</figcaption>
-                    </td>
-                    <td>
-                        <img class="homepage" src="assets/images/homepage2.png" alt="Homepage no.2">
-                        <figcaption>Homepage, second iteration.</figcaption>
-                    </td>
-                    <td>
-                        <img class="homepage" src="assets/images/homepage3.png" alt="Homepage no.3">
-                        <figcaption>Homepage, final iteration.</figcaption>
-                    </td>
-                </tr>
-            </table>
+            <div class="slideshow-wrapper">
+                <div class="slideshow-container" data-slideshow="1">
+                        <div class="slide active">
+                        <img class="outline" src="assets/images/homepage1.png" alt="Homepage no.1">
+                        <div class="caption">
+                            First iteration
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="outline" src="assets/images/homepage2.png" alt="Homepage no.2">
+                        <div class="caption">
+                            Second iteration
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="outline" src="assets/images/homepage3.png" alt="Homepage no.3">
+                        <div class="caption">
+                            Final iteration
+                        </div>
+                    </div>
+                
+                        <!-- Navigation arrows -->
+                        <a class="prev" onclick="changeSlide(-1, 1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1, 1)">&#10095;</a>
+                </div>
+                
+                <!-- Dots navigation -->
+                <div class="circles-container">
+                    <span class="circle active" onclick="currentSlide(1, 1)"></span>
+                    <span class="circle" onclick="currentSlide(2, 1)"></span>
+                    <span class="circle" onclick="currentSlide(3, 1)"></span>
+                </div>
+            </div>
+            <div class="base-iterations">
+                <table>
+                    <tr class="iteration">
+                        <td style="border-right: 1px solid black">
+                            <h2>First Iteration</h2>
+                            <h3>Issues:</h3>
+                            <ul>
+                                <li>cards are too small</li>
+                                <li>homepage feels crowded</li>
+                                <li>designs are bland</li>
+                            </ul>
+                        </td>
+                        <td style="border-right: 1px solid black">
+                            <h2>Second Iteration</h2>
+                            <h3>Changes:</h3>
+                            <ul>
+                                <li>cards are bigger</li>
+                                <li>easier to read</li>
+                                <li>more personality</li>
+                            </ul>
+                            <h3>Issues:</h3>
+                            <ul>
+                                <li>too repetitive</li>
+                                <li>top bar needs work</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <h2>Final Iteration</h2>
+                            <h3>Changes</h3>
+                            <ul>
+                                <li>cards have customization</li>
+                                <li>improved top bar</li>
+                                <li>colors are balanced</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mobile-iterations text-padding">
+                <h2>First Iteration</h2>
+                <h3>Issues:</h3>
+                <ul>
+                    <li>cards are too small</li>
+                    <li>homepage feels crowded</li>
+                    <li>designs are bland</li>
+                </ul>
+                <h2>Second Iteration</h2>
+                <h3>Changes:</h3>
+                <ul>
+                    <li>cards are bigger</li>
+                    <li>easier to read</li>
+                    <li>more personality</li>
+                </ul>
+                <h3>Issues:</h3>
+                <ul>
+                    <li>too repetitive</li>
+                    <li>top bar needs work</li>
+                </ul>
+                <h2>Final Iteration</h2>
+                <h3>Changes</h3>
+                <ul>
+                    <li>cards have customization</li>
+                    <li>improved top bar</li>
+                    <li>colors are balanced</li>
+                </ul>
+            </div>
         </div>
         <hr class="divider"></hr>
         <div class="text-padding">
-            <table class="table_padding">
+            <div class="slideshow-wrapper">
+                <div class="slideshow-container" data-slideshow="2">
+                        <div class="slide active">
+                        <img class="outline" src="assets/images/carpool1.png" alt="Carpool no.1">
+                        <div class="caption">
+                            First iteration
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="outline" src="assets/images/carpool2.png" alt="Carpool no.2">
+                        <div class="caption">
+                            Second iteration
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="outline" src="assets/images/carpool3.png" alt="Carpool no.3">
+                        <div class="caption">
+                            Final iteration
+                        </div>
+                    </div>
+                
+                        <!-- Navigation arrows -->
+                        <a class="prev" onclick="changeSlide(-1, 2)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1, 2)">&#10095;</a>
+                    </div>
+                
+                <!-- Dots navigation -->
+                <div class="circles-container">
+                    <span class="circle active" onclick="currentSlide(1, 1)"></span>
+                    <span class="circle" onclick="currentSlide(2, 1)"></span>
+                    <span class="circle" onclick="currentSlide(3, 1)"></span>
+                </div>
+            </div>
+            <div class="base-iterations">
+            <table class="table-padding">
                 <tr class="iteration">
                     <td style="border-right: 1px solid black">
                         <h2>First Iteration</h2>
-                        <p style="text-decoration: underline;">Issues:</p>
+                        <h3>Issues:</h3>
                         <ul>
                             <li>colors are flat and bland</li>
                             <li>layout needs work</li>
@@ -275,20 +368,20 @@
                     </td>
                     <td style="border-right: 1px solid black">
                         <h2>Second Iteration</h2>
-                        <p style="text-decoration: underline;">Changes:</p>
+                        <h3>Changes:</h3>
                         <ul>
                             <li>matches the homepage customization</li>
                             <li>added hashtags</li>
                             <li>improved layout</li>
                         </ul>
-                        <p style="text-decoration: underline;">Issues:</p>
+                        <h3>Issues:</h3>
                         <ul>
                             <li>information is crowded</li>
                         </ul>
                     </td>
                     <td>
                         <h2>Final Iteration</h2>
-                        <p style="text-decoration: underline;">Changes</p>
+                        <h3>Changes</h3>
                         <ul>
                             <li>"Join Carpool" moved to the top</li>
                             <li>profile is in its own section</li>
@@ -296,21 +389,36 @@
                         </ul>
                     </td>
                 </tr>
-                <tr class="iteration">
-                    <td>
-                        <img class="homepage" src="assets/images/carpool_page1.png" alt="Carpool Page no.1">
-                        <figcaption>Carpool page, first iteraion.</figcaption>
-                    </td>
-                    <td>
-                        <img class="homepage" src="assets/images/carpool_page2.png" alt="Carpool Page no.2">
-                        <figcaption>Carpool page, second iteration.</figcaption>
-                    </td>
-                    <td>
-                        <img class="homepage" src="assets/images/carpool_page3.png" alt="Carpool Page no.3">
-                        <figcaption>Carpool page, final iteration.</figcaption>
-                    </td>
-                </tr>
             </table>
+            </div>
+            <div class="mobile-iterations">
+                <h2>First Iteration</h2>
+                <h3>Issues:</h3>
+                <ul>
+                    <li>colors are flat and bland</li>
+                    <li>layout needs work</li>
+                </ul>
+                <h2>Second Iteration</h2>
+                <h3>Changes:</h3>
+                <ul>
+                    <li>matches the homepage customization</li>
+                    <li>added hashtags</li>
+                    <li>improved layout</li>
+                </ul>
+                <h3>Issues:</h3>
+                <ul>
+                    <li>information is crowded</li>
+                </ul>
+            </td>
+                <h2>Final Iteration</h2>
+                <h3>Changes</h3>
+                <ul>
+                    <li>"Join Carpool" moved to the top</li>
+                    <li>profile is in its own section</li>
+                    <li>information is bigger and better spaced</li>
+                </ul>
+            </div>
+            </div>
         </div>
         <hr class="divider"></hr>
         <div class="text-padding">
@@ -327,13 +435,15 @@
             <p>
                 This is the final component set, with 7 color choices, and 5 patterns:
             </p>
-            <img class="image" src="assets/images/color_cards.png" alt="Color Cards">
+            <div class="userflow">
+            <img class="image expandable" src="assets/images/color_cards.png" alt="Color Cards">
             <figcaption>Card customization.</figcaption>
+            </div>
         </div>
         <hr class="divider"></hr>
         <div class="text-padding">
             <h1>Final Prototype</h1>
-            <img class="image" src="assets/images/final_prototype.png" alt="Final prototype">
+            <img class="image expandable" src="assets/images/final_prototype.png" alt="Final prototype">
             <figcaption>Final prototype mockup.</figcaption>
             <p>
                 The final result was a comprehensive carpool app that allowed users to create or join carpools, 
@@ -356,14 +466,17 @@
                 messages, and information access requests.
             </p>
             <br>
-            <p id="view_prototype">View Prototype &rarr;</p>
+            <a href="https://www.figma.com/proto/kANx2EhA5WfBpb9WR38y1L/School-Ride?page-id=107%3A147&node-id=332-24792&p=f&viewport=165%2C435%2C0.04&t=feb4thwv5rygXheb-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=332%3A24792&show-proto-sidebar=1" id="button-link" target="_blank"> 
+                <div id="final-prototype">
+                    <p>View Prototype</p>    
+                </div>
+            </a>
         </div>
         <div>
-            <div class="section-padding">
-                <div id="final_reflection"> 
-                    <pre class="section-text">final reflection</pre>
-                </div>
-            </div>
+            <div id="final-reflection"> 
+                <p class="section-text">final reflection</p>
+        </div>
+            <div class="section-shadow"></div>
         </div>
         <div class="text-padding">
             <p>
@@ -395,22 +508,31 @@
                 </li>
             </ol>
         </div>
-        <div class="text-padding" id="thank_you">
+        <div class="text-padding" id="thank-you">
             Thank you for reading my case study!
         </div>
     </div>
+    <div id="overlay" class="overlay">
+        <span class="close">&times;</span>
+        <img id="expanded-img" src="" alt="">
+      </div>
+</main>
     <footer class="footer-container">
         <div class="copyright">
             <p class="footer-text">Copyright Liev Fletcher 2024</p>
         </div>
+        <div class="contact-mobile">
+            <p class="footer-text"> Contact:</p>
+        </div>
         <div class="links">
             <p class="footer-text">lievflet@gmail.com</p>
-            <a class="footer-text" href="www.linkedin.com/in/liev-fletcher">www.linkedin.com/in/liev-fletcher</a>
+            <a class="footer-text" href="https://www.linkedin.com/in/liev-fletcher" target="_blank">www.linkedin.com/in/liev-fletcher</a>
         </div>
-        <div class="contact">
+        <div class="contact-desktop">
             <p class="footer-text"> Contact:</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
 
