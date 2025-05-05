@@ -92,8 +92,8 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    width: 100%; /* Ensure body doesn't exceed viewport width */
-    overflow-x: hidden; /* Alternative to preventing overflow without using overflow:hidden globally */
+    width: 100%; 
+    overflow-x: hidden; 
   }
  
  html, body {
@@ -107,10 +107,10 @@
  body {
    display: flex;
    flex-direction: column;
-   min-height: 100vh; /* Viewport height */
+   min-height: 100vh; 
  }
  main {
-   flex: 1 0 auto; /* This is the key - it will grow to push footer down */
+   flex: 1 0 auto; 
  }
  
  body.about-page {
@@ -126,8 +126,8 @@
 
 .topnav {
     background-color: rgba(255, 255, 255, 0.6);
-    overflow: visible; /* Ensure this is visible */
-    z-index: 1000; /* Increase z-index to ensure it's above other elements */
+    overflow: visible; 
+    z-index: 1000; 
     position: fixed;
     top: 0;
     width: 100%;
@@ -287,18 +287,18 @@
     width: 30%;
     border-radius: 0px 120px 0px 120px;
     height: auto;
-    object-fit: contain; /* This will show the full image */
+    object-fit: contain; 
     margin-right: 5%;
 }
 
 .about-container {
     display: flex;
-    align-items: center; /* Vertically center items */
+    align-items: center; 
     justify-content: space-between;
     width: 100%;
     padding: 0 5%;
     margin: 15% 2% 0 2%;
-    box-sizing: border-box; /* Added to include padding in width calculation */
+    box-sizing: border-box; 
 }
 
 .about-text {
@@ -307,16 +307,16 @@
 
 .text-style {
     font-family: "Opificio", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 400;
-    padding: 0; /* Remove existing padding */
-    float: none; /* Remove float */
+    padding: 0; 
+    float: none;
 }
 
 .about-me-highlight {
     font-family: "Typo-Hoop", Arial, sans-serif;
     color: #00C9B2;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 400;
     text-align: left;
     padding: 5% 0 3% 10%;
@@ -347,7 +347,7 @@ a:hover {
 hr {
     border: 0;
     height: 0;
-    margin: 15px 0; /* Controls spacing between links */
+    margin: 15px 0; 
     visibility: hidden;
 }
 
@@ -364,20 +364,23 @@ hr {
     margin: 40px 0 40px 40px;
     box-sizing: border-box;
 }
-
 /* ========================================
    FOOTER STYLES
    ======================================== */
 
-.footer-container {
-    flex-shrink: 0;
+   .footer-container {
+    flex-shrink: 0; 
     width: 100%;
     background-color: #E5E5E5;
-    padding: 0px 20px 20px 20px;
+    padding: 20px;
     box-sizing: border-box;
+    margin-top: auto; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
     position: relative;
     z-index: 2;
-    overflow-x: hidden;
+    display: inline-block;
 }
 
 .copyright {
@@ -412,6 +415,7 @@ hr {
     font-weight: 400;
     letter-spacing: 0.25px;
 }
+
 
 /* ========================================
    MEDIA QUERIES
@@ -450,11 +454,11 @@ hr {
     }
 
     #big-container {
-        width: 90%; /* Keep your original width */
-        height: auto !important; /* Force height to auto */
-        min-height: 250px; /* Maintain minimum height */
+        width: 90%;
+        height: auto !important; 
+        min-height: 250px; 
         padding: 30px 20px 0px 30px;
-        margin-bottom: auto; /* Add extra bottom margin */
+        margin-bottom: auto; 
     }
     
     .text-style, .contact, .about-me-highlight {
@@ -491,14 +495,14 @@ hr {
     .profile-image {
         width: 60%;
         border-radius: 0pc 80px 0px 80px;
-        margin: 80px 0 20px 0; /* Add bottom margin for spacing between image and text */
-        order: 1; /* Make sure image comes first */
+        margin: 80px 0 20px 0; 
+        order: 1; 
     }
 
     .about-text {
         width: 100%;
-        order: 2; /* Text comes after the image */
-        text-align: left; /* Optional: center the text on mobile */
+        order: 2; 
+        text-align: left; 
         padding: 0 10px 0 40px;
         margin-top: 0;
     }
@@ -535,24 +539,22 @@ hr {
     }
 
     #big-container {
-        width: 90%; /* Keep your original width */
-        height: auto !important; /* Force height to auto */
-        min-height: 210px; /* Maintain minimum height */
+        width: 90%;
+        height: auto !important; 
+        min-height: 210px;
         padding: 30px 20px 0px 30px;
         margin: 40px 0 0px 20px;
     }
-
-    /*Footer*/
     .footer-container {
         width: 100%;
         box-sizing: border-box;
-        padding: 20px;
+        padding: 0px 20px 20px 20px;
         text-align: center;
         margin-top: 0;
-        padding-top: 0;
+        padding-top: 20px;
         border-top: none;
     }
-
+  
     .copyright, 
     .contact-mobile, 
     .links {
@@ -562,7 +564,7 @@ hr {
         text-align: center;
         margin: 0 auto 10px auto;
     }
-
+    
     .copyright {
         margin-bottom: 20px;
     }
@@ -574,16 +576,16 @@ hr {
         margin-bottom: 5px;
         display: block;
     }
-
+    
     .links {
         order: 2; 
     }
-
+    
     .footer-text {
-        font-size: 14px;
+        font-size: 12px;
         margin: 5px 0;
     }
-
+    
     .links p, 
     .links a {
         display: block;

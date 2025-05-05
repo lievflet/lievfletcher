@@ -100,10 +100,10 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Viewport height */
+    min-height: 100vh;
 }
 main {
-    flex: 1 0 auto; /* This is the key - it will grow to push footer down */
+    flex: 1 0 auto;
 }
 
 body.index-page {
@@ -119,8 +119,8 @@ body.index-page {
 
    .topnav {
     background-color: rgba(255, 255, 255, 0.6);
-    overflow: visible; /* Ensure this is visible */
-    z-index: 1000; /* Increase z-index to ensure it's above other elements */
+    overflow: visible; 
+    z-index: 1000; 
     position: fixed;
     top: 0;
     width: 100%;
@@ -277,7 +277,7 @@ body.index-page {
    ======================================== */
 
    .home-intro {
-    height: auto;  /* Change from calc(100vh - 50px) to auto */
+    height: auto; 
     min-height: 400px;
     padding: 20px;
     clear: both;
@@ -302,7 +302,7 @@ body.index-page {
     margin-top: 12%;
     padding-left: 5%;
     padding-right: 5%;
-    column-gap: 40px; /* Reduced from 150px for more balanced spacing */
+    column-gap: 40px; 
     box-sizing: border-box;
 }
 
@@ -320,7 +320,7 @@ body.index-page {
 .intro p {
     margin: 0;
     padding: 0;
-    line-height: 1.2; /* Match the line height of interests */
+    line-height: 1.2; 
 }
 
 .interests {
@@ -346,12 +346,12 @@ body.index-page {
 
 #container-container {
     width: 100%;
-    height: auto; /* Allow auto height */
+    height: auto; 
     display: flex;
     flex-direction: row;
-    align-items: flex-end; /* Align containers at bottom */
+    align-items: flex-end; 
     margin-top: 15%;
-    margin-bottom: 20px; /* Space before footer */
+    margin-bottom: 20px;
 
 }
 
@@ -361,12 +361,12 @@ body.index-page {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 70%;
-    height: auto; /* Allow height to adjust to content */
-    min-height: 300px; /* Maintain minimum height */
-    padding: 30px 20px 30px 50px; /* Added bottom padding */
+    height: auto; 
+    min-height: 300px; 
+    padding: 30px 20px 30px 50px; 
     position: relative;
     display: inline-block;
-    margin-right: 10px; /* Add space between containers */
+    margin-right: 10px;
 }
 
 #big-container p {
@@ -409,9 +409,9 @@ body.index-page {
     background-size: 100% 100%;
     display: inline-block;
     width: 30%;
-    height: auto; /* Allow height to adjust to content */
-    min-height: 240px; /* Maintain minimum height */
-    padding: 20px 20px 30px 50px; /* Added right and bottom padding */
+    height: auto; 
+    min-height: 240px; 
+    padding: 20px 20px 30px 50px;
 }
 
 
@@ -448,7 +448,7 @@ body.index-page {
 #big-container p, #small-container p,
 #big-container h1, #small-container h1,
 #big-container h2, #small-container h2 {
-    max-width: 95%; /* Prevent text from overflowing */
+    max-width: 95%; 
 }
 
 .divider {
@@ -475,19 +475,23 @@ a {
     line-height: normal;
     letter-spacing: 0.25px;
 }
-
 /* ========================================
    FOOTER STYLES
    ======================================== */
 
    .footer-container {
-    flex-shrink: 0; /* Prevent the footer from shrinking */
+    flex-shrink: 0; 
     width: 100%;
     background-color: #E5E5E5;
-    padding: 0px 20px 20px 20px;
+    padding: 20px;
     box-sizing: border-box;
-    margin-top: auto; /* This helps push it to the bottom */
-    position: relative; /* Not fixed or absolute position */
+    margin-top: auto; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
 }
 
 .copyright {
@@ -535,11 +539,11 @@ a {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Two equal columns */
-        gap: 20px; /* Reduced from 35px */
+        grid-template-columns: 1fr 1fr;
+        gap: 20px; 
         margin-top: 10%;
-        padding-left: 5%; /* Reduced from auto */
-        padding-right: 5%; /* Reduced from auto */
+        padding-left: 5%; 
+        padding-right: 5%; 
         width: 100%;
         box-sizing: border-box;
     }
@@ -569,13 +573,13 @@ a {
     #interest6 { grid-column: 2 / 3; grid-row: 4 / 5; }
 
     #container-container {
-        height: auto; /* Changed from fixed percentage to auto */
+        height: auto; 
         display: flex;
-        flex-direction: row; /* Keep side by side */
-        flex-wrap: nowrap; /* Prevent wrapping */
-        align-items: flex-end; /* Align bottoms - this is the key change */
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        align-items: flex-end; 
         margin-top: 15%;
-        margin-bottom: 20px; /* Space before footer */
+        margin-bottom: 20px; 
     }
     
     .container-title {
@@ -583,11 +587,11 @@ a {
     }
 
     #big-container {
-        width: 60%; /* Keep your original width */
-        height: auto !important; /* Force height to auto */
-        min-height: 300px; /* Maintain minimum height */
+        width: 60%; 
+        height: auto !important; 
+        min-height: 300px; 
         padding: 30px 20px 30px 30px;
-        margin-right: 10px; /* Add some space between containers */
+        margin-right: 10px; 
     }
     
 
@@ -630,7 +634,7 @@ a {
     #big-container p, #small-container p,
     #big-container h1, #small-container h1,
     #big-container h2, #small-container h2 {
-        max-width: 95%; /* Prevent text from overflowing */
+        max-width: 95%;
     }
     
     .footer-text {
@@ -666,11 +670,11 @@ a {
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
-        padding-left: 5%; /* Reduced from 8% */
-        padding-right: 5%; /* Reduced from 8% */
+        padding-left: 5%; 
+        padding-right: 5%; 
         margin-left: 0;
         margin-right: 0;
-        overflow: hidden; /* Contain any children that might overflow */
+        overflow: hidden; 
     }
     
     .home-highlight {
@@ -692,11 +696,11 @@ a {
     }
     
     .interests {
-        font-size: 18px; /* Slightly smaller font */
-        max-width: 100%; /* Ensure text doesn't overflow */
-        text-align: center; /* Right align text as in your design */
-        overflow-wrap: break-word; /* Break long words if needed */
-        white-space: normal; /* Allow text to wrap */
+        font-size: 18px; 
+        max-width: 100%; 
+        text-align: center; 
+        overflow-wrap: break-word; 
+        white-space: normal; 
     }
     
     #interest1, #interest2, #interest3, 
@@ -753,16 +757,17 @@ a {
         font-size: 20px;
     }
 
+
     .footer-container {
         width: 100%;
         box-sizing: border-box;
-        padding: 20px;
+        padding: 0px 20px 20px 20px;
         text-align: center;
         margin-top: 0;
         padding-top: 20px;
         border-top: none;
     }
-
+  
     .copyright, 
     .contact-mobile, 
     .links {
@@ -799,13 +804,5 @@ a {
         display: block;
         margin: 5px 0;
     }
-}
-
-
-
-
-
-
-
-
-
+  }
+  

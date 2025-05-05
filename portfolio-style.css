@@ -232,6 +232,7 @@ body.portfolio-page {
       border-radius: 50%;
       margin-left: 10px;
   }
+
   .topnav {
       width: 100%;
       box-sizing: border-box;
@@ -283,7 +284,7 @@ body.portfolio-page {
   
 .portfolio-intro {
   font-family: "Opificio", Arial, sans-serif;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 400;
   padding-right: 15%;
   padding-left: 15%;
@@ -295,7 +296,7 @@ body.portfolio-page {
 .portfolio-highlight {
   font-family: "Typo-Hoop", Arial, sans-serif;
   color: #8167E7;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 400;
   margin-left: 55%;
   margin-right: 45%;
@@ -475,6 +476,10 @@ hr {
     letter-spacing: 0.25px;
 }
 
+
+
+
+
 /* ========================================
    MEDIA QUERIES
    ======================================== */
@@ -530,7 +535,7 @@ hr {
     }
 
     .description {
-      padding: 20px 20px 50px 30px;
+      padding: 20px 20px 80px 30px;
     }
 }
 
@@ -581,6 +586,8 @@ hr {
 
 
     
+
+    
     .container-right{
       border-radius: 100px 0px 25px 0px;
     }
@@ -623,7 +630,6 @@ hr {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding-bottom: 0; 
       height: auto;
       padding: 20px 0 0 0; 
       width: 100%;
@@ -715,8 +721,54 @@ hr {
         display: block;
         margin: 5px 0;
     }
-}
+    
+    .footer-container {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0px 20px 20px 20px;
+      text-align: center;
+      margin-top: 0;
+      padding-top: 20px;
+      border-top: none;
+  }
 
+  .copyright, 
+  .contact-mobile, 
+  .links {
+      width: 100%;
+      float: none;
+      display: block;
+      text-align: center;
+      margin: 0 auto 10px auto;
+  }
+  
+  .copyright {
+      margin-bottom: 20px;
+  }
+  .contact-desktop {
+      display: none;
+  }
+  .contact-mobile {
+      order: 1; 
+      margin-bottom: 5px;
+      display: block;
+  }
+  
+  .links {
+      order: 2; 
+  }
+  
+  .footer-text {
+      font-size: 14px;
+      margin: 5px 0;
+  }
+  
+  .links p, 
+  .links a {
+      display: block;
+      margin: 5px 0;
+  }
+}
 
 
 
