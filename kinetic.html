@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kinetic Workshop - Case Study</title>
     <link rel="stylesheet" href="kinetic.css" />
-    <script src="script.js"></script>
   </head>
 <body class="kinetic">
     <header>
@@ -254,7 +253,10 @@
             <div class="section-shadow"></div>
         </div>
         <div class="text-padding">
-    <!-- image placeholder -->
+                <img  class="image expandable" src="/assets/images/kinetic-reflection.png" alt="Research Notes">
+                <figcaption>
+                    Final mockup.
+                </figcaption>
             <p>
                 This was a very exciting opportunity as a new designer. I deeply enjoy creatting unconventional designs,
                 especially for websites, and having full creative control of the entire project made it especially meaningful. I am very 
@@ -275,7 +277,12 @@
             Thank you for reading my case study!
         </div>
     </div>
-    </main>
+    <!-- Image overlay container - used for expandable images -->
+    <div id="overlay" class="overlay">
+        <span class="close">&times;</span>
+        <img id="expanded-img" alt="">
+    </div>
+</main>
     <footer class="footer-container">
         <div class="copyright">
             <p class="footer-text">Copyright Liev Fletcher 2024</p>

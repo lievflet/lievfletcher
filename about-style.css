@@ -245,6 +245,7 @@
     }
     
     .topnav .topnav-right a.icon {
+        color: black;
         float: right;
         display: block;
     }
@@ -255,6 +256,7 @@
     }
     
     .topnav.responsive .topnav-right .icon {
+        color: black;
         position: absolute;
         right: 0;
         top: 0;
