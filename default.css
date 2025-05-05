@@ -238,15 +238,18 @@ body.index-page {
     }
     
     .topnav .topnav-right a.icon {
+        color: black;
         float: right;
         display: block;
     }
     
     .topnav.responsive {
-        position: relative;
+        position: fixed;
+        top: 0;
     }
     
     .topnav.responsive .topnav-right .icon {
+        color: black;
         position: absolute;
         right: 0;
         top: 0;
@@ -480,7 +483,7 @@ a {
    .footer-container {
     flex-shrink: 0; /* Prevent the footer from shrinking */
     width: 100%;
-    background-color: #f1f1f1;
+    background-color: #E5E5E5;
     padding: 0px 20px 20px 20px;
     box-sizing: border-box;
     margin-top: auto; /* This helps push it to the bottom */

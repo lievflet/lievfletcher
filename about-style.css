@@ -250,7 +250,8 @@
     }
     
     .topnav.responsive {
-        position: relative;
+        position: fixed;
+        top: 0;
     }
     
     .topnav.responsive .topnav-right .icon {
@@ -369,7 +370,7 @@ hr {
 .footer-container {
     flex-shrink: 0;
     width: 100%;
-    background-color: #f1f1f1;
+    background-color: #E5E5E5;
     padding: 0px 20px 20px 20px;
     box-sizing: border-box;
     position: relative;

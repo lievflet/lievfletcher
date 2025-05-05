@@ -85,12 +85,12 @@
   body {
     margin: 0;
     padding: 0;
-    background: #F3F0F0;
+    background: #EFEFEF;
     background-attachment: fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures body takes full viewport height */
+    min-height: 100vh;
     font-family: "Opificio", Arial, sans-serif;
   }
   
@@ -100,7 +100,7 @@
     padding: 0;
   }
   main {
-    flex: 1 0 auto; /* This is the key - it will grow to push footer down */
+    flex: 1 0 auto;
   }
 
   
@@ -111,8 +111,8 @@
 
 .topnav {
     background-color: rgba(255, 255, 255, 0.8);
-    overflow: visible; /* Ensure this is visible */
-    z-index: 1000; /* Increase z-index to ensure it's above other elements */
+    overflow: visible;
+    z-index: 1000; 
     position: fixed;
     top: 0;
     width: 100%;
@@ -230,15 +230,18 @@
     }
     
     .topnav .topnav-right a.icon {
+        color: black;
         float: right;
         display: block;
     }
     
     .topnav.responsive {
-        position: relative;
+        position: fixed;
+        top: 0;
     }
     
     .topnav.responsive .topnav-right .icon {
+        color: black;
         position: absolute;
         right: 0;
         top: 0;
@@ -269,6 +272,7 @@
     top: 0;
     display: flex;
     width: 100%;
+    margin-top: 68px;
 }
 
 #mockup {
@@ -486,7 +490,7 @@ img {
 }
 
 
-.userflow {
+.background {
     background-color: #E5E5E5;
     padding: 2%;
     border-radius: 10px;
@@ -500,6 +504,10 @@ figcaption {
     font-weight: 400;
     line-height: normal;
     padding-top: 10px;
+}
+
+.base-intro {
+    margin-top: 100px;
 }
 
 .mobile-intro {
@@ -737,7 +745,7 @@ li {
    .footer-container {
     flex-shrink: 0; /* Prevent the footer from shrinking */
     width: 100%;
-    background-color: #f1f1f1;
+    background-color: #E5E5E5;
     padding: 0px 20px 20px 20px;
     box-sizing: border-box;
     margin-top: auto; /* This helps push it to the bottom */
@@ -900,11 +908,12 @@ li {
 @media only screen and (max-width: 576px) {
 
     #hero-image {
-        margin-top: 60px; /* Adjust based on your navbar height */
+        margin-top: 60px;
     }
     
     .mobile-intro {
         display: block;
+        margin-top: 50px;
     }
 
     .base-intro {
