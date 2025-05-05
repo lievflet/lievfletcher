@@ -332,7 +332,7 @@ a:hover {
 .contact {
     font-family: "Typo-Hoop", Arial, sans-serif;
     color: #86DF31;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 400;
     text-align: left;
 }
@@ -351,6 +351,11 @@ hr {
     visibility: hidden;
 }
 
+#big-container, p, a {
+    font-size: 24px;
+}
+
+
 #big-container {
     background-image: url('/assets/images/bigcontainer.png');
     background-repeat: no-repeat;
@@ -358,10 +363,10 @@ hr {
     width: 90%;
     height: auto; 
     min-height: 240px; 
-    padding: 20px 20px 0 70px;
+    padding: 20px 20px 30px 70px;
     position: relative;
     display: block; 
-    margin: 40px 0 40px 40px;
+    margin: 40px 0 50px 40px;
     box-sizing: border-box;
 }
 /* ========================================
@@ -371,7 +376,7 @@ hr {
    .footer-container {
     flex-shrink: 0; 
     width: 100%;
-    background-color: #E5E5E5;
+    background-color: #F0EDFA;
     padding: 20px;
     box-sizing: border-box;
     margin-top: auto; 

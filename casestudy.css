@@ -1139,3 +1139,56 @@ li {
     }
   }
 
+
+  /* ========================================
+   BUTTON FONT FIX
+   ======================================== */
+
+/* Make sure all button links use the correct font */
+#button-link,
+.return,
+#final-prototype,
+a.button,
+.button a,
+a[class*="button"],
+[id*="button"] a,
+[id*="button"] p {
+    font-family: "Typo-Hoop-Light", "Typo-Hoop", Arial, sans-serif !important;
+    text-decoration: none;
+}
+
+/* Ensure consistent font loading by adding format specifiers */
+@font-face {
+    font-family: "Typo-Hoop-Light";
+    src: url('/assets/fonts/typo-hoop/Typo_Hoop_Light_Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Typo-Hoop";
+    src: url('/assets/fonts/typo-hoop/Typo_Hoop_Regular_Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Backup font stack for buttons in case web fonts fail to load */
+#button p,
+#final-prototype p,
+.return p,
+.topnav .topnav-right a,
+.topnav .logo {
+    font-family: "Typo-Hoop-Light", "Typo-Hoop", Arial, sans-serif;
+}
+
+/* Add local font fallback options */
+@font-face {
+    font-family: "Typo-Hoop-Light-Local";
+    src: local("Typo Hoop Light Demo"),
+         url('/assets/fonts/typo-hoop/Typo_Hoop_Light_Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
