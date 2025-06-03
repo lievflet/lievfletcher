@@ -285,7 +285,7 @@ body.portfolio-page {
   
 .portfolio-intro {
   font-family: "Opificio", Arial, sans-serif;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 400;
   padding-right: 15%;
   padding-left: 15%;
@@ -297,7 +297,7 @@ body.portfolio-page {
 .portfolio-highlight {
   font-family: "Typo-Hoop", Arial, sans-serif;
   color: #8167E7;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 400;
   margin-left: 55%;
   margin-right: 45%;
@@ -370,7 +370,7 @@ body.portfolio-page {
 .title {
   color: #000;
   font-family: "Opificio", Arial, sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -380,7 +380,7 @@ body.portfolio-page {
 .info {
   color: #000;
   font-family: "Opificio", Arial, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -392,14 +392,14 @@ ul {
   list-style-type: disc;   
   color: #000;
   font-family: "Opificio", Arial, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 .go-to {
-  font-size: 20px;
+  font-size: 18px;
   color: #8167E7;
 }
 
@@ -472,7 +472,7 @@ hr {
 .footer-text {
     color: #000;
     font-family: "Opificio", Arial, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.25px;
 }
@@ -531,7 +531,7 @@ hr {
       font-size: 20px;
     }
     
-    .info, .go-to, #stay-tuned, .footer-text, ul {
+    .info, .go-to, #stay-tuned, ul {
       font-size: 18px;
     }
 
@@ -652,7 +652,7 @@ hr {
       padding-right: 40px;
     }
 
-    .info, .go-to, #stay-tuned, .footer-text, ul {
+    .info, .go-to, #stay-tuned, ul {
       font-size: 16px;
     }
     
@@ -760,7 +760,7 @@ hr {
   }
   
   .footer-text {
-      font-size: 14px;
+      font-size: 12px;
       margin: 5px 0;
   }
   

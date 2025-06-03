@@ -308,7 +308,7 @@
 
 .text-style {
     font-family: "Opificio", Arial, sans-serif;
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 400;
     padding: 0; 
     float: none;
@@ -317,7 +317,7 @@
 .about-me-highlight {
     font-family: "Typo-Hoop", Arial, sans-serif;
     color: #00C9B2;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 400;
     text-align: left;
     padding: 5% 0 3% 10%;
@@ -333,7 +333,7 @@ a:hover {
 .contact {
     font-family: "Typo-Hoop", Arial, sans-serif;
     color: #86DF31;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 400;
     text-align: left;
 }
@@ -353,7 +353,7 @@ hr {
 }
 
 #big-container, p, a {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 
@@ -417,7 +417,7 @@ hr {
 .footer-text {
     color: #000;
     font-family: "Opificio", Arial, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.25px;
 }
@@ -480,7 +480,7 @@ hr {
     }
 
     .footer-text {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 

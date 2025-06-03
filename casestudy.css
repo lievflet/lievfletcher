@@ -808,7 +808,7 @@ li {
 .footer-text {
     color: #000;
     font-family: "Opificio", Arial, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.25px;
 }
@@ -829,7 +829,7 @@ li {
     
     
     .footer-text {
-        font-size: 16px;
+        font-size: 14px;
     }
     
     #title {
@@ -1129,7 +1129,7 @@ li {
     }
     
     .footer-text {
-        font-size: 14px;
+        font-size: 12px;
         margin: 5px 0;
     }
     

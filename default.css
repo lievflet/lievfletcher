@@ -372,7 +372,7 @@ body.index-page {
 
 #big-container p {
     font-family: "Opificio", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -385,7 +385,7 @@ body.index-page {
 }
 
 #big-container .go-to {
-    font-size: 20px;
+    font-size: 18px;
     color: #8167E7;
 }
 
@@ -394,7 +394,7 @@ body.index-page {
 }
 
 #view-all {
-    font-size: 22px;
+    font-size: 20px;
     color: #FF85D6;
     text-decoration: none;
     margin-bottom: 15px;
@@ -417,19 +417,19 @@ body.index-page {
 
 
 #small-container p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #small-container h2 {
     color: #8167E7;
     font-family: "Opificio", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     letter-spacing: 0.25px;
 }
 
 #small-container a {
-    font-size: 20px;
+    font-size: 18px;
     color: black;
 }
 
@@ -440,7 +440,7 @@ body.index-page {
 .container-title {
     color: #858585;
     font-family: "Typo-Hoop", Arial, sans-serif;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 400;
     letter-spacing: 0.25px;
     text-decoration: none;
@@ -470,7 +470,7 @@ a {
 
 #big-container h2 {
     font-family: "Varela-Round", Arial, sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -523,7 +523,7 @@ a {
 .footer-text {
     color: #000;
     font-family: "Opificio", Arial, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.25px;
 }
@@ -639,7 +639,7 @@ a {
     }
     
     .footer-text {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
@@ -796,7 +796,7 @@ a {
     }
     
     .footer-text {
-        font-size: 14px;
+        font-size: 12px;
         margin: 5px 0;
     }
     
