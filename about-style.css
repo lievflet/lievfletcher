@@ -308,7 +308,7 @@
 
 .text-style {
     font-family: "Opificio", Arial, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     padding: 0; 
     float: none;
@@ -317,7 +317,7 @@
 .about-me-highlight {
     font-family: "Typo-Hoop", Arial, sans-serif;
     color: #00C9B2;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     text-align: left;
     padding: 5% 0 3% 10%;
