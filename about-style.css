@@ -86,6 +86,7 @@
  body {
     margin: 0;
     padding: 0;
+    padding-top: 70px;
     background: #FCFCFC;
     background-attachment: fixed;
     background-size: cover;
@@ -285,26 +286,23 @@
 /*Body Style*/
 
 .profile-image {
-    width: 30%;
+    width: 25%;
     border-radius: 0px 120px 0px 120px;
     height: auto;
-    object-fit: contain; 
-    margin-right: 5%;
+    object-fit: contain;
+    float: right; 
+    margin-left: 20px; 
+    margin-bottom: 20px; 
 }
 
 .about-container {
-    display: flex;
-    align-items: center; 
-    justify-content: space-between;
     width: 100%;
     padding: 0 5%;
-    margin: 15% 2% 0 2%;
-    box-sizing: border-box; 
+    margin: 0 2% 0 2%; 
+    box-sizing: border-box;
+    padding-top: 80px;
 }
 
-.about-text {
-    width: 60%;
-}
 
 .text-style {
     font-family: "Opificio", Arial, sans-serif;
@@ -320,7 +318,8 @@
     font-size: 22px;
     font-weight: 400;
     text-align: left;
-    padding: 5% 0 3% 10%;
+    padding: 0 0 1% 10%; 
+    margin-top: 0; 
 }
 
 a {
@@ -358,18 +357,21 @@ hr {
 
 
 #big-container {
-    background-image: url('/assets/images/bigcontainer.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    fill: rgba(245, 245, 245, 0.1);
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(2.5px);
+    outline: solid 1px #dcdcdc;
+    border-radius: 120px 0px 120px 0px;
     width: 90%;
     height: auto; 
     min-height: 240px; 
     padding: 20px 20px 30px 70px;
     position: relative;
     display: block; 
-    margin: 40px 0 50px 40px;
+    margin: 50px 50px 50px 50px;
     box-sizing: border-box;
 }
+
 /* ========================================
    FOOTER STYLES
    ======================================== */
@@ -442,14 +444,14 @@ hr {
     .profile-image {
         width: 40%;
         border-radius: 0px 100px 0px 100px;
-        margin-right: 0;
-        margin-left: 0;
+        float: right;
+        margin-left: 15px;
+        margin-bottom: 15px;
     }
 
     .about-text {
-        width: 50%;
-        margin-top: 80px;
-        margin-right: 20px;
+        margin-top: 0;
+        margin-right: 0;
     }
 
     main {
@@ -465,6 +467,7 @@ hr {
         min-height: 250px; 
         padding: 30px 20px 0px 30px;
         margin-bottom: auto; 
+        border-radius: 100px 0 100px 0;
     }
     
     .text-style, .contact, .about-me-highlight {
@@ -492,8 +495,6 @@ hr {
     }
 
     .about-container {
-        flex-direction: column;
-        align-items: center;
         padding: 0 3%;
         margin: 5% 0 0 0;
     }
@@ -501,14 +502,14 @@ hr {
     .profile-image {
         width: 60%;
         border-radius: 0pc 80px 0px 80px;
-        margin: 80px 0 20px 0; 
-        order: 1; 
+        float: none; /* Remove float on mobile */
+        display: block;
+        margin: 80px auto 20px auto; /* Center the image */
     }
 
     .about-text {
         width: 100%;
-        order: 2; 
-        text-align: left; 
+        text-align: left;
         padding: 0 10px 0 40px;
         margin-top: 0;
     }
@@ -541,16 +542,19 @@ hr {
     }
 
     .text-style, .contact, .about-me-highlight {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     #big-container {
-        width: 90%;
-        height: auto !important; 
-        min-height: 210px;
-        padding: 30px 20px 0px 30px;
-        margin: 40px 0 0px 20px;
+        display: none;
     }
+    #big-container p, a {
+        font-size: 16px;
+    }
+    #big-container h2 {
+        font-size: 20px;
+    }
+    
     .footer-container {
         width: 100%;
         box-sizing: border-box;
@@ -604,6 +608,52 @@ hr {
 
 
 
+/* Larger Screen */
+@media only screen and (min-width: 2000px) {
+    body.index-page {
+        background-image: url(assets/images/index-large.svg);
+    }
 
+    .topnav {
+        padding: 0 10%;
+    }
+
+    main {
+        padding: 0 10%;
+    }
+
+    .footer-container {
+        padding: 10px 10%;
+    }
+
+    .footer-text {
+        font-size: 18px;
+    }
+
+    .topnav .logo {
+        float: left;
+        font-size: 24px;
+    }
+
+    .topnav .topnav-right a {
+        font-size: 16px;
+    }
+
+    .about-container {
+        margin: 10% 2% 0 2%;
+    }
+
+    .text-style, {
+        font-size: 22px;
+    }
+
+    .contact, .about-me-highlight {
+        font-size: 24px;
+    }
+
+    a, p {
+        font-size: 20px;
+    }
+}
 
 

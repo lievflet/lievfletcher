@@ -86,7 +86,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #FCFCFC;
+    background: #FFFFFF;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -353,7 +353,6 @@ body.index-page {
     align-items: flex-end; 
     margin-top: 15%;
     margin-bottom: 20px;
-
 }
 
 
@@ -807,3 +806,75 @@ a {
     }
   }
   
+/* Larger Screen */
+  @media only screen and (min-width: 2000px) {
+    body.index-page {
+        background-image: url(assets/images/index-large.svg);
+    }
+
+    .topnav {
+        padding: 0 10%;
+    }
+
+    main {
+        padding: 0 10%;
+    }
+
+    .footer-container {
+        padding: 10px 10%;
+    }
+
+    .footer-text {
+        font-size: 18px;
+    }
+
+    .topnav .logo {
+        float: left;
+        font-size: 24px;
+    }
+
+    .topnav .topnav-right a {
+        font-size: 16px;
+    }
+
+    .grid-container {
+        margin-top: 12%;
+    }
+
+    .intro {
+        font-size: 30px;
+    }
+
+    .interests {
+        font-size: 28px;
+    }
+
+    .home-highlight {
+        font-size: 38px;
+    }
+
+    #big-container {
+        padding: 40px 30px 40px 60px; 
+    }
+
+    #small-container {
+        padding: 20px 30px 40px 60px;
+        min-height: 380px;
+    }
+
+    #container-container {
+        margin-top: 10%;
+    }
+
+    #big-container p, #view-all, #small-container h2, #big-container .go-to {
+        font-size: 20px;
+    }
+
+    #big-container h2 {
+        font-size: 22px;
+    }
+        
+    #small-container a, #small-container p {
+        font-size: 20px;
+    }
+  }

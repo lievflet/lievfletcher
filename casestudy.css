@@ -272,7 +272,7 @@
     top: 0;
     display: flex;
     width: 100%;
-    margin-top: 68px;
+    margin-top: 66px;
 }
 
 #mockup {
@@ -332,7 +332,7 @@
     display: flex;
     position: absolute;
     right: 0;
-    margin-right: 100px;
+    margin-right: 15%;
 }
 
 #button:hover { 
@@ -605,7 +605,8 @@ li {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    background-color: #DDDDDD;
+    background-color: #ffffff;
+    outline: solid 1px #dcdcdc;
     padding: 1%;
     text-decoration: none;
     margin: 5% auto;
@@ -621,7 +622,7 @@ li {
 }
 
 .return:hover {
-    background-color: #c9c9c9;
+    background-color: #e3e3e3;
 }
 
 
@@ -633,7 +634,7 @@ li {
   }
   
   .expandable:hover {
-    opacity: 0.8;
+    opacity: 0.7;
   }
   
   .overlay {
@@ -1192,4 +1193,36 @@ a[class*="button"],
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+/* Larger Screen */
+@media only screen and (min-width: 2000px) {
+    body.index-page {
+        background-image: url(assets/images/index-large.svg);
+    }
+
+    .topnav {
+        padding: 0 10%;
+    }
+
+    main {
+        padding: 0 15%;
+    }
+
+    .footer-container {
+        padding: 10px 10%;
+    }
+
+    .footer-text {
+        font-size: 18px;
+    }
+
+    .topnav .logo {
+        float: left;
+        font-size: 24px;
+    }
+
+    .topnav .topnav-right a {
+        font-size: 16px;
+    }
 }
